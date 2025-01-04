@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+/*----heaDer----*/
+header{
+  background:rgba(255,255,255,1);
+  /* border-bottom:10px solid rgba(107,164,184,1); */
+}
+header nav ol{
+  background:rgba(107,164,184,.1);
+}
+header nav ol li a{
+  color:rgba(107,164,184,1) !important;
+}
+header h1,
+header>ul li a{
+  color:rgba(107,164,184,1) !important;
+}
+header div p{
+  color:rgba(255,255,255,1) !important;
+}
+
+@media screen and (max-width:813px){
+  header{
+    /* border-bottom:3px solid rgba(107,164,184,1); */
+  }
+  header nav{
+    /* border-top:5px solid rgba(107,164,184,1); */
+  }
+}
+
+/*----fooTer----*/
+footer{
+  background:rgba(107,164,184,1);
+}
+.p-box-lanclose dl dd{
+  background:rgba(107,164,184,1) !important;
+}
+
+/*----tAb----*/
+.c-tabLayout ul li .current{
+  background:rgba(107,164,184,1);
+}
+.c-tabLayout ul li a:hover{
+  background:rgba(107,164,184,.1);
+}
+
+/*----fOnt----*/
+body{font-family:'Noto Sans JP',sans-serif;}
+.c-btnLayout{font-family:'Noto Sans JP',sans-serif;}
+.c-btn{font-family:'Noto Sans JP',sans-serif;}
+input[type="text"],
+input[type="password"],
+input[type="date"]{font-family:'Noto Sans JP',sans-serif;}
+select{font-family:'Noto Sans JP',sans-serif;}
+textarea{font-family:'Noto Sans JP',sans-serif;}
+.c-number-select input{font-family:'Noto Sans JP',sans-serif;}
+
+/*----coMMon----*/
+.c-ttl{
+  color:rgba(107,164,184,1) !important;
+}
+.c-box-title{
+  border-bottom:2px solid rgba(107,164,184,1) !important;
+}
+.c-box-title h2{
+  color:rgba(107,164,184,1);
+}
+.c-box-title-caution{
+  border-bottom:2px solid rgba(107,164,184,1) !important;
+}
+.c-box-title-caution dl{
+  color:rgba(107,164,184,1) !important;
+}
+.c-btn-theme{
+  /* background:rgba(107,164,184,1) !important; */
+  background: rgb(172, 65, 65) !important;
+}
+.c-btn-reservation{
+  background:rgba(107,164,184,1) !important;
+}
+.c-spec{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.1);
+  border:1px solid rgba(107,164,184,.2);
+}
+.c-spec-day{
+  color:#fff;
+  background:rgba(107,164,184,1);
+  border:1px solid rgba(107,164,184,1);
+}
+.c-spec-closed{
+  color:#fff;
+  background:rgba(107,164,184,1);
+  border:1px solid rgba(107,164,184,1);
+}
+.c-spec-member{
+  color:#fff;
+  background:rgba(107,164,184,1);
+  border:1px solid rgba(107,164,184,1);
+}
+.c-number-select input{
+  /* border:solid rgba(107,164,184,1) !important; */
+  border: solid rgb(172, 65, 65) !important;
+  border-width:1px 0 !important;
+  text-align: center
+}
+.c-number-select button{
+  /* background:rgba(107,164,184,1) !important; */
+  background: rgb(172, 65, 65) !important;
+}
+.p-sortLayout dd p a.selected::after{
+  background:rgba(107,164,184,1);
+}
+.c-check input:checked+span::before{
+  background:rgba(107,164,184,1);
+  border:2px solid transparent;
+}
+/* .c-radio input:checked+span::before{
+  border:2px solid rgba(107,164,184,1);
+}
+.c-radio input:checked+span::after{
+  background:rgba(107,164,184,1);
+} */
+.c-radio input:checked+span::before{
+  border:2px solid rgb(189, 70, 70);
+}
+.c-radio input:checked+span::after{
+  background:rgb(189, 70, 70);
+}
+
+/*----moDule----*/
+.u-bg-themeColor{
+  background:rgba(107,164,184,.05) !important;
+  border:1px solid rgba(107,164,184,1) !important;
+}
+.u-bg-themeColor10{
+  background:rgba(107,164,184,.1) !important;
+}
+.u-color-theme{
+  color:rgba(107,164,184,1) !important;
+}
+.u-color-memberPrice{
+  color:rgba(107,164,184,1) !important;
+}
+.u-border-bottom{
+  border-bottom:1px solid rgba(107,164,184,1);
+}
+.u-border-top{
+  border-top:1px solid rgba(107,164,184,1);
+}
+@media screen and (max-width:813px){
+  .u-border-top-smp2{
+    border-top:1px solid rgba(107,164,184,1) !important;
+  }
+  .u-border-top-smp3{
+    border-top:1px solid rgba(107,164,184,.2) !important;
+  }
+}
+
+/*----manaGement----*/
+.p-pagenation li a.current,
+.p-pagenation li a:hover{
+  background:rgba(107,164,184,1) !important;
+}
+
+/*----reseRvation----*/
+.p-box-confirm-pay-list li dl dt{
+  background:rgba(107,164,184,.1);
+}
+.p-box-pay{
+  background:rgba(107,164,184,.1);
+}
+.p-box-pay dt{
+  color:rgba(107,164,184,1);
+}
+
+/*----seaRch----*/
+.p-date-summary{
+  background:rgba(107,164,184,.05);
+}
+
+/*----sElect----*/
+.p-conditions>div{
+  background:rgba(107,164,184,.05);
+}
+.p-conditions>div ol{
+  border-bottom:1px solid rgba(107,164,184,1);
+}
+.p-list .p-list-content li dl dd:nth-child(4) span i{
+  color:rgba(107,164,184,1) !important;
+}
+.p-card-list>li .conditions li:last-child dd i,
+.modal-detail .conditions li:nth-child(3) dd i,
+.p-box-subdetail .conditions li:nth-child(3) dd i{
+  color:rgba(107,164,184,1);
+}
+.p-search-button dt{
+  color:rgba(107,164,184,1);
+}
+
+/*----tOp----*/
+.p-box-main>div>dl>dt{
+  color:rgba(107,164,184,1);
+  border-bottom:2px solid rgba(107,164,184,1);
+}
+.p-box-access .facility dt,
+.p-box-access .access dt{
+  color:rgba(107,164,184,1);
+  border-bottom:2px solid rgba(107,164,184,1);
+}
+
+/*----calEndar----*/
+.flatpickr-day.inRange,
+.flatpickr-day.prevMonthDay.inRange,
+.flatpickr-day.nextMonthDay.inRange,
+.flatpickr-day.today.inRange,
+.flatpickr-day.prevMonthDay.today.inRange,
+.flatpickr-day.nextMonthDay.today.inRange{
+  background:rgba(107,164,184,.1);
+  border:solid rgba(107,164,184,1);
+  border-width:1px 0;
+}
+.flatpickr-day:hover{
+  color:rgba(107,164,184,1);
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(107,164,184,1);
+}
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover{
+  color:rgba(107,164,184,1) !important;
+  background:rgba(255,255,255,1) !important;
+  border:1px solid rgba(107,164,184,1) !important;
+}
+.flatpickr-day:focus,
+.flatpickr-day.prevMonthDay:focus,
+.flatpickr-day.nextMonthDay:focus{
+  background:rgba(107,164,184,.1);
+  border:1px solid rgba(107,164,184,1);
+}
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover{
+  color:rgba(107,164,184,1);
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(107,164,184,1);
+}
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay{
+  background:rgba(107,164,184,1);
+}
+.flatpickr-day.selected:hover{
+  color:#fff;
+  background:rgba(107,164,184,1);
+}
+.flatpickr-day.today{
+  background:rgba(107,164,184,.05);
+  border:1px solid rgba(107,164,184,.05);
+}
+.flatpickr-day.selected.today,
+.flatpickr-day.startRange.today{
+  background:rgba(107,164,184,1);
+}
+.flatpickr-day.today:hover{
+  color:rgba(107,164,184,1) !important;
+  background:rgba(255,255,255,1) !important;
+  border:1px solid rgba(107,164,184,1);
+}
+.p-calendar>dd ol li a:hover{
+  background:rgba(107,164,184,.1) !important;
+  box-shadow:0 0 3px rgba(107,164,184,1) !important;
+}
+
+/*----chainTop----*/
+.sctble_display span::after{
+  color:rgba(107,164,184,1);
+}
+.p-box-select>ul>li>ul>li label span::after{
+  color:rgba(107,164,184,1);
+}
+.p-box-select>ul>li>ul>li label .inputDeco::after{
+  color:rgba(107,164,184,1);
+}
+.sctble_mat p a.selected,
+.sctble_mat p a:hover{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.05);
+}
+.sctble_mat dl dd a.selected,
+.sctble_mat dl dd a:hover{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.05);
+}
+.p-stockCheck-list>li dl dd ol li a:hover{
+  background:rgba(107,164,184,.1);
+}
+.p-stockCheck-list>li dl dd ol li svg{
+  fill:rgba(107,164,184,1);
+}
+
+/*----newdEsign----*/
+.p-listLayout-detail>ul li{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.1);
+  border:1px solid rgba(107,164,184,.2);
+}
+.p-listLayout-reservation>dd ol>li>div dl dd>strong.member{
+  color:rgba(107,164,184,1);
+}
+.p-listLayout-reservation>dd ol>li>div ul li i{
+  color:rgba(107,164,184,1);
+}
+.p-listLayout-reservation>dd ol>li>dl dd ul.p-listLayout-reservationLabel li{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.1);
+  border:1px solid rgba(107,164,184,.2);
+}
+.p-detail-box{
+  background:rgba(107,164,184,.05);
+  border:2px solid rgba(107,164,184,1);
+}
+.p-detail-box>ul{
+  border-right:1px solid rgba(107,164,184,.2);
+}
+@media screen and (max-width:813px){
+  .p-detail-box>ul{
+    border-right:none;
+  }
+}
+.p-detail-box>div p{
+  border-right:1px solid rgba(107,164,184,.2);
+}
+@media screen and (max-width:1000px){
+  .p-detail-box>div p{
+    border:none;
+  }
+}
+.p-detail-box>div ol li i{
+  color:rgba(107,164,184,1);
+}
+@media screen and (max-width:813px){
+  .p-detail-box>div ol{
+    border-top:1px solid rgba(107,164,184,.2);
+  }
+}
+.p-detail-select li{
+  border-width:1px 0;
+}
+@media screen and (max-width: 813px){
+  .p-detail-select li{
+    border-width:0 0 1px;
+  }
+}
+/*--payDetail--*/
+.p-box-payDetail-discount{
+  background:rgba(107,164,184,.1);
+}
+/*--GoToTravel--*/
+.c-box-themeColor{
+  color:rgba(107,164,184,1);
+  background:rgba(107,164,184,.1);
+}
+.c-box-gotoCaution{
+  background:rgba(107,164,184,.1);
+}
+.c-label-goto{
+  background:rgba(107,164,184,.2) !important;
+}
+
+/*--infoBanner--*/
+.c-infoBanner-item{
+  color:rgba(255,255,255,1);
+  background:rgba(107,164,184,1);
+  border-bottom:1px solid rgba(255,255,255,1);
+}

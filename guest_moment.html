@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ASIBAN QUAY HOTEL</title>
+    <link rel="icon" href="assets/img/icon.jpg" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N98R5QQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="copyright" content="lskycambo">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1,user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/room.css">
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/editor.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Summernote CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+
+    <style>
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  } */
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    /* padding: 48px; */
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    /* max-width: 550px; */
+    max-width: 655px;
+    width: 100%;
+    /* background: white; */
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #972a47;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #972a47;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+
+  .formbold-file-input input {
+    opacity: 0;
+    /* position: absolute; */
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .formbold-file-input label {
+    position: relative;
+    border: 1px dashed #e0e0e0;
+    border-radius: 6px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 48px;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .formbold-drop-file {
+    display: block;
+    font-weight: 600;
+    color: #07074d;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .formbold-or {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .formbold-browse {
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+
+  .formbold-file-list {
+    border-radius: 6px;
+    background: #f5f7fb;
+    padding: 16px 32px;
+  }
+
+  .formbold-file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .formbold-file-item button {
+    color: #07074d;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .formbold-file-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    padding-right: 12px;
+  }
+  .formbold-progress-bar {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 8px;
+    background: #e2e5ef;
+  }
+
+  .formbold-progress {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #972a47;
+    border-radius: 8px;
+  }
+
+  .upload_height{
+    width: 100%;
+    height: 220px;
+  }
+
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+  #guest_mo_bg{
+    background: url(assets/img/contact.png);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #fff;
+    }
+
+    .send_padding{
+        padding-bottom: 50px;
+    }
+  
+
+    </style>
+
+</head>
+
+<body id="top" class="index" >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N98R5QQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="mainheader">
+        <div class="mainheader__inr">
+            <h1 class="logo"><a href="index.html"><img src="assets/img/logo asiban1.svg" alt="asibanhotell" style="width: 39%;"></a></h1>
+            <div id="spnav" class="for_sp">
+                <ul>
+                    <li class="btn_rsv"><a href="tel:019-625-2222" target="_blank">
+                            <p><img src="https://www.hotel-newcarina.co.jp/images/header_icon01.svg"></p>
+                            <h5 class="title title_none">TELEPHONE</h5>
+                        </a></li>
+                    <li class="btn_rsv"><a href="search.html" target="_blank" rel="noopener noreferrer">
+                            <p><img src="https://www.hotel-newcarina.co.jp/images/icon_srch.svg"></p>
+                            <h5 class="title title_none none">RESERVATION</h5>  
+                        </a></li>
+                    <li class="btn_rsv span_top"><a href="#open" class="open">
+                            <p><span></span><span></span><span></span></p>
+                            <!-- <h5 id="js_opentxt">MENU</h5> -->
+                        </a></li>
+                </ul>
+            </div>
+            <nav class="fnav">
+                <div class="fnav__wrap">
+                    <ul>
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="room.html">ROOMS</a></li>
+                        <li><a href="guest_moment.html">GUEST MOMENT</a></li>
+                        <li><a href="facility&services.html">FACILITY & SERVICE</a></li>
+                        <li><a href="tel:081567281" target="_blank">CONTACT US</a></li>
+                    </ul>
+                </div>
+                 <button type="button" class="btn  btn_rsv for_pc" data-toggle="modal" data-target="#myModal">BOOKING<br>TEL&nbsp;081-567-281</button>
+            </nav>
+        </div>
+    </header>
+    
+    <article id="mainvisual" class="jus">
+        <ul class="mvslide">
+            <li>
+                <picture>
+                    <!-- <source media="(max-width:1000px)" srcset="images/index/mv01_sp.jpg 1000w"> -->
+                    <img src="assets/img/room1.jpg" alt="asiban1">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- <source media="(max-width:1000px)" srcset="images/index/mv01_sp.jpg 1000w"> -->
+                    <img src="assets/img/gustroom.jpg" alt="asiban1">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- <source media="(max-width:1000px)" srcset="assets/img/961970.mp4 1000w"> -->
+                    <img src="assets/img/play gita.webp" alt="asiban1">
+                </picture>
+            </li>
+        </ul>
+        <div class="drop-in-2 mt-4" id="profile">
+            <p class="wel_fist">Welcome To <br>Asiban Quay Boutique Hotel</p>
+        </div>
+        <p class="scroll for_pc"><a href="#contents"><img loading="lazy" src="assets/img/scroll-top.svg" alt="scroll"></a></p>
+        <ul class="mv__btn">
+        </ul>
+    </article><!-- / #mainvisuals -->
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class=" modaal-inner-wrapper">
+                <div class="modaal-container ">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true">&times;</span>
+                        
+                        </button>
+                        <h4 class="modal-title text-h3hotel" id="myModalLabel">SEARCH</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box_reservation modal-content">
+                            <div class="box_search">
+                                <div class="box_panel">
+                                    <div class="box_search_detail" id="panel01" style="display: block;">
+                                        <form id="ZenSearchFrom" class="obj_search" action="room_cheak.html" method="get" target="_new" rel="noopener">
+                                            <div id="searchBox" class="wrp_searchbox">
+                                                <div class="outer_date">
+                                                    <!-- チェックイン -->
+                                                    <div class="checkin box_day text-right04">
+                                                        <p class="sb_txt text-right02">Check-in</p>
+                                                        <input type="date" id="checkin_date" value="checkin_date" name="checkin_date" class="text-calada">
+                                                        <input type="date" id="checkin_date" value="check_out_date" name="check_out_date" class="text-calada">
+                                                        <span class="ic"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <!-- 泊数 -->
+                                                    <div class="box_sta text-right04">
+                                                        <p class="sb_txt text-right02">Night</p>
+                                                        <label>
+                                                            <select id="numOfNights" class="text-calada">
+                                                                <option value="1">1Night</option>
+                                                                <option value="1">2Nights</option>
+                                                                <option value="1">3Nights</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                    <!-- 部屋数 -->
+                                                    <div class="box_roo text-right04">
+                                                        <p class="sb_txt text-right02">Rooms</p>
+                                                        <label>
+                                                            <select name="rooms" class="text-calada">
+                                                                <option value="1">1room</option>
+                                                                <option value="2">2room</option>
+                                                                <option value="3">3room</option>
+                                                                <option value="3">4room</option>
+                                                                <option value="3">5room</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                    <!-- 人数 -->
+                                                    <div class="box_per text-right04">
+                                                        <p class="sb_txt text-right02">Adult</p>
+                                                        <label>
+                                                            <select name="adults" class="text-calada">
+                                                                <option value="1" selected="">1People</option>
+                                                                <option value="2">2People</option>
+                                                                <option value="3">3People</option>
+                                                                <option value="4">4People</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                </div><!-- /.outer_date -->
+                                                <!-- 検索ボタン -->
+                                                <!--Search with these conditions-->
+                                                <div class="btn_submit">
+                                                    <p class="field-button"><input class="btn01" type="submit" value="CHECK AVAILABILITY"></p>
+                                                </div>
+                                            </div><!-- /searchbox -->
+                                        </form>
+                                        <!-- リンク -->
+                                    </div><!-- /.box_search_detail -->
+                                 
+                                </div><!-- /.box_panel -->
+                            </div><!-- /.box_search -->
+                            <p class="modal-close-custum">
+                                <span></span>
+                                <span></span>
+                            </p><!-- /.modaal-close -->
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div id="guest_mo_bg">
+            <section class="about">
+                <div class="w1300 drop-in-2 mt-4">
+                    <h2 class="about__ttl yuMincho showup">GUEST MOMENT</h2>
+                    <p class="about__lead yuMincho showup">
+                        Asiban Quay Boutique Hotel is the perfect choice for travelers who want to take in the sights and sounds of Phnom Penh. 
+                        Experience an urban escape in Phnom Penh with a stay at Asiban Quay Boutique Hotel, with its exceptional location right in the city center.
+                    </p>
+                </div>
+            </section>
+            <div class="formbold-main-wrapper">
+                <div class="formbold-form-wrapper">
+                    <form action="" method="POST">
+                        <div class="formbold-mb-5">
+                            <label for="email" class="formbold-form-label">
+                                Name:
+                            </label>
+                            <input type="name" name="name" id="name" placeholder="Enter your name" class="formbold-form-input"/>
+                        </div>
+
+                        <div class="formbold-mb-5">
+                            <label for="email" class="formbold-form-label">
+                                Email:
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input"/>
+                        </div>
+
+                        <div class="formbold-mb-5">
+                            <label for="email" class="formbold-form-label">
+                                Phone:
+                            </label>
+                            <input type="number" placeholder="Enter your number phone" class="formbold-form-input"/>
+                        </div>
+                
+                        <div class="mb-6 pt-4">
+                            <label class="formbold-form-label formbold-form-label-2">
+                                    Upload File
+                            </label>
+                        </div>
+
+                        <main class="cd__main">
+                            <!-- Start DEMO HTML (Use the following code into your project)-->
+                            <div id="summernote"></div>
+                            <!-- END EDMO HTML (Happy Coding!)-->
+                         </main>
+
+                        <div class="send_padding">
+                            <a href="index.html"><button class="formbold-btn w-full" onclick="myFunction()">Send</button></a>
+                        </div>
+                        <!-- <div class="col-lg-12">
+                            <input type="submit" class="btn btn-defeault btn-send" value="Send message" onclick="myFunction()">
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+
+            <!-- <div class="swiper mySwiper" style="padding-bottom:40px;">
+                <div class="swiper-wrapper">
+                  <div class="row">
+                      <div class="swiper-slide col-xl-4 box1">
+                        <img src="assets/img/top-room2.jpg" alt="..." class="">
+                      </div>
+                      <div class="swiper-slide col-xl-4 box3">
+                        <img src="assets/img/top-room1.jpg" alt="..." class="">
+                      </div>
+                      <div class="swiper-slide col-xl-4 box3">
+                        <img src="assets/img/top-room1.jpg" alt="..." class="">
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> -->
+
+        </div>
+
+        <section class="swiper thubmnail">
+            <div class="swiper-wrapper thubmnail-wrapper">
+                <div class="swiper-slide thubmnail-slide">
+                    <figure class="thubmnail-box">
+                        <img src="assets/img/top-room1.jpg" alt="..." class="">
+                    </figure>
+                </div>
+                <div class="swiper-slide thubmnail-slide">
+                    <figure class="thubmnail-box">
+                        <img src="assets/img/bed_sigle_1.jpg" alt="..." class="">
+                    </figure>
+                </div>
+                <div class="swiper-slide thubmnail-slide">
+                    <figure class="thubmnail-box">
+                        <img src="assets/img/top-room2.jpg" alt="..." class="">
+                    </figure>
+                </div>
+                <div class="swiper-slide thubmnail-slide">
+                    <figure class="thubmnail-box">
+                        <img src="assets/img/bed_sigle_2.jpg" alt="..." class="">
+                    </figure>
+                </div>
+                <div class="swiper-slide thubmnail-slide">
+                    <figure class="thubmnail-box">
+                        <img src="assets/img/top-room1.jpg" alt="..." class="">
+                    </figure>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next next-btn"></div>
+            <div class="swiper-button-prev prev-btn"></div> -->
+        </section>
+
+        <style>
+            .thubmnail-header {
+                margin-top: 4rem;
+                margin-bottom: 3rem;
+            }
+
+            .thubmnail {
+                /* background: linear-gradient(to right, #db0000, #1f0000);
+                padding: 2rem; */
+            }
+
+            .thubmnail-slide {
+                width: 500px;
+                padding: 0.29rem;
+            }
+            .thubmnail-box {
+                width: 100%;
+                overflow: hidden;
+            }
+            .thubmnail-box img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+        </style>
+
+
+
+      
+
+        <!-- footer -->
+        <footer style="background-color: #6f5c41;" >
+            <div class="w1920">
+                <div class="footer__wrap">
+                    <p class="footer__img footer_margin"><img src="assets/img/footer.jpg" alt="picture footer"></p>
+                    <div class="footer__content" id="footer_content">
+                        <div class="footer__contentInr">
+                            <address class="footer__address">
+                                <li><a href="">Address : 319, Street Sisowath Quay, Riverside Path, 12000, Phnom Penh, Cambodia</li></a><br>
+                                <li><a href="tel:081-567-281">Tel : 081 567 281</a></li>
+                            </address>
+                            <nav class="footer__navWrap YuMincho footer_font">
+                                <ul>
+                                    <li><a href="index.html">TOP</a></li>
+                                    <li>
+                                        <a href="room.html">ROOMS</a>
+                                    </li>
+                                </ul>
+
+                                <div class="footer__navMain footer_font">
+                                    <ul>
+                                        <li><a href="guest_moment.html">GUEST MOMENT</a></li>
+                                        <li><a href="facility&services.html">FACILTY & SERVICE</a></li>
+                                        <li><a href="facility&services.html">SERVICE</a></li>
+                                        <li><a href="tel:081-567-281">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div id="page-top" class="">
+                            <img src="assets/img/pagetop.svg" alt="PAGETOP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="w1300">Copyright © HOTEL ASIBANQUAY. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /contents -->
+
+    <link rel="stylesheet" href="/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="/css/slick-theme.css" type="text/css">
+    <script type="text/javascript" src="/js/slick.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        //thubmnail slide
+        const thubmnail = new Swiper(".thubmnail", {
+        grabCursor: true,
+        // loop: true,
+        slidesPerView: 3,
+        spaceBetween: 3,
+        breakpoints: {
+        0: {
+            slidesPerView: 3,
+            // spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 2,
+            // spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 2,
+        },
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        });
+
+    </script>
+
+    <!-- scroll header -->
+    <script>
+        const navbar = document.querySelector(".mainheader__inr .logo")
+        window.onscroll = () => {
+            navbar.classList.remove('active')
+            if(window.scrollY > 0) {
+                document.querySelector(".mainheader__inr").classList.add("active")
+                document.querySelector(".logo").classList.add("active")
+            }else {
+                document.querySelector(".mainheader__inr").classList.remove("active")
+            }
+        }
+    </script>
+    <!-- scroll header -->
+
+    <script>
+        function myFunction() {
+            alert("message successfully sent").then(response => {
+            window.location.href = 'index.html';
+            })
+        }
+    </script>
+
+    <script>
+        // File Upload
+    function ekUpload(){
+    function Init() {
+
+        console.log("Upload Initialised");
+
+        var fileSelect    = document.getElementById('file-upload'),
+            fileDrag      = document.getElementById('file-drag'),
+            submitButton  = document.getElementById('submit-button');
+
+        fileSelect.addEventListener('change', fileSelectHandler, false);
+
+        // Is XHR2 available?
+        var xhr = new XMLHttpRequest();
+        if (xhr.upload) {
+        // File Drop
+        fileDrag.addEventListener('dragover', fileDragHover, false);
+        fileDrag.addEventListener('dragleave', fileDragHover, false);
+        fileDrag.addEventListener('drop', fileSelectHandler, false);
+        }
+    }
+
+    function fileDragHover(e) {
+        var fileDrag = document.getElementById('file-drag');
+
+        e.stopPropagation();
+        e.preventDefault();
+
+        fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
+    }
+
+    function fileSelectHandler(e) {
+        // Fetch FileList object
+        var files = e.target.files || e.dataTransfer.files;
+
+        // Cancel event and hover styling
+        fileDragHover(e);
+
+        // Process all File objects
+        for (var i = 0, f; f = files[i]; i++) {
+        parseFile(f);
+        uploadFile(f);
+        }
+    }
+
+    // Output
+    function output(msg) {
+        // Response
+        var m = document.getElementById('messages');
+        m.innerHTML = msg;
+    }
+
+    function parseFile(file) {
+
+        console.log(file.name);
+        output(
+        '<strong>' + encodeURI(file.name) + '</strong>'
+        );
+        
+        // var fileType = file.type;
+        // console.log(fileType);
+        var imageName = file.name;
+
+        var isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
+        if (isGood) {
+        document.getElementById('start').classList.add("hidden");
+        document.getElementById('response').classList.remove("hidden");
+        document.getElementById('notimage').classList.add("hidden");
+        // Thumbnail Preview
+        document.getElementById('file-image').classList.remove("hidden");
+        document.getElementById('file-image').src = URL.createObjectURL(file);
+        }
+        else {
+        document.getElementById('file-image').classList.add("hidden");
+        document.getElementById('notimage').classList.remove("hidden");
+        document.getElementById('start').classList.remove("hidden");
+        document.getElementById('response').classList.add("hidden");
+        document.getElementById("file-upload-form").reset();
+        }
+    }
+
+    function setProgressMaxValue(e) {
+        var pBar = document.getElementById('file-progress');
+
+        if (e.lengthComputable) {
+        pBar.max = e.total;
+        }
+    }
+
+    function updateFileProgress(e) {
+        var pBar = document.getElementById('file-progress');
+
+        if (e.lengthComputable) {
+        pBar.value = e.loaded;
+        }
+    }
+
+    function uploadFile(file) {
+
+        var xhr = new XMLHttpRequest(),
+        fileInput = document.getElementById('class-roster-file'),
+        pBar = document.getElementById('file-progress'),
+        fileSizeLimit = 1024; // In MB
+        if (xhr.upload) {
+        // Check if file is less than x MB
+        if (file.size <= fileSizeLimit * 1024 * 1024) {
+            // Progress bar
+            pBar.style.display = 'inline';
+            xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
+            xhr.upload.addEventListener('progress', updateFileProgress, false);
+
+            // File received / failed
+            xhr.onreadystatechange = function(e) {
+            if (xhr.readyState == 4) {
+                // Everything is good!
+
+                // progress.className = (xhr.status == 200 ? "success" : "failure");
+                // document.location.reload(true);
+            }
+            };
+
+            // Start upload
+            xhr.open('POST', document.getElementById('file-upload-form').action, true);
+            xhr.setRequestHeader('X-File-Name', file.name);
+            xhr.setRequestHeader('X-File-Size', file.size);
+            xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+            xhr.send(file);
+        } else {
+            output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
+        }
+        }
+    }
+
+    // Check for the various File API support.
+    if (window.File && window.FileList && window.FileReader) {
+        Init();
+    } else {
+        document.getElementById('file-drag').style.display = 'none';
+    }
+    }
+    ekUpload();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.mvslide').slick({
+                autoplay: true,
+                infinite: true,
+                fade: true,
+                arrows: false,
+                dots: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                autoplaySpeed: 2000,
+                speed: 1000
+            });
+            $('.loopslider').slick({
+                autoplay: true, // 自動でスクロール
+                speed: 1000, // スライドが流れる速度を設定
+                autoplaySpeed: 2000,
+                variableWidth: true,
+                centerMode: true,
+                infinite: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                dots: true,
+                responsive: [{
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 1, // 画面幅750px以下でスライド3枚表示
+                        variableWidth: false,
+                    }
+                }]
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.room_slide').slick({
+                autoplay: true,
+                infinite: true,
+                fade: true,
+                arrows: false,
+                dots: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                autoplaySpeed: 2000,
+                speed: 1000
+            });
+
+        });
+        $(document).ready(function() {
+            $("div#panel").show();
+
+            var autoTimer = null;
+
+            autoTimer = setTimeout(function() {
+                $("div#panel").slideDown("slow");
+                autoTimer = setTimeout(function() {
+                    $("div#panel").slideUp("slow");
+                }, 5000);
+            }, 2000);
+
+            $("#open").click(function() {
+                $("div#panel").slideDown("slow");
+                if (autoTimer) clearTimeout(autoTimer);
+                autoTimer = null;
+            });
+
+            $("#close").click(function() {
+                $("div#panel").slideUp("slow");
+                if (autoTimer) clearTimeout(autoTimer);
+                autoTimer = null;
+            });
+        });
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.smoothScroll.js"></script>
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- webfont -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- Summernote JS -->
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <!-- Script JS -->
+    <script src="./js/script.js"></script>
+<!--$%analytics%$-->
+    <script>
+        $('#summernote').summernote({
+            placeholder: 'Hello Asiban Hotel',
+            tabsize: 2,
+            height: 300
+     });
+    </script>
+</body>
+
+</html>
