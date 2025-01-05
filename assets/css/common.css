@@ -1033,6 +1033,7 @@ select {
   #mainheader .logo img{
     width: 100% !important;
     margin-left: 30% !important;
+    background-color: #000;
   }
 }
 @media (max-width: 660px){
@@ -1202,7 +1203,7 @@ select {
     background: url(../images/home/deco_logo.png) 5% 95% no-repeat;
     background-size: 50% auto;
     height: 100%;
-    padding: 9% 6% 6% !important;
+    padding: 7% 4% 6% !important;
   }
 }
 .mb05em {
@@ -3263,7 +3264,7 @@ to {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 2;
-    background-image: url(../img/banna_slide.jpg);
+    background-image: url(../img/viewr.jpg);
     padding: 130px 0 170px 0;
     margin-bottom: 0px;
     margin: auto;
