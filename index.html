@@ -66,7 +66,7 @@
     </div>
     <!-- header -->
     <header id="mainheader">
-        <div class="ad-top-header">
+        <!-- <div class="ad-top-header">
             <div class="container-fluid">
                 <div class="top-header-row top_two">
                     <div class="top-header-right">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="mainheader__inr">
             <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="lsphotell"></a></h1>
@@ -91,7 +91,7 @@
                             </p>
                             <h5 class="title title_none">TELEPHONE</h5>
                         </a></li>
-                    <li class="btn_rsv vw"><a href="search.html" target="_blank" rel="noopener noreferrer">
+                    <li class="btn_rsv vw"><a href="https://www.booking.com/hotel/kh/pich-lisa-snntthaagaar-bejr-liisaa.en-gb.html?aid=318615&label=New_English_EN_KH_27027142105-bickLRGJk0Y6UwpZjpjGIQS637942138739%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199482059065%3Alp1009829%3Ali%3Adec%3Adm%3Aag27027142105%3Acmp400679065&sid=186e53f362417885dd7d5215cd6f9270&dest_id=-1023795&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1736233350&srpvid=54b4317a750b04fb&type=total&ucfs=1&" target="_blank" rel="noopener noreferrer">
                             <p class="img_center"><img src="https://www.hotel-newcarina.co.jp/images/icon_srch.svg"></p>
                             <h5 class="title title_none none">RESERVATION</h5>
                         </a></li>
@@ -106,13 +106,16 @@
                     <ul>
                         <li><a href="index.html">TOP</a></li>
                         <li><a href="room.html">ROOMS</a></li>
-                        <li><a href="guest_moment.html">ABOUT</a></li>
+                        <li><a href="profile_about.html">ABOUT</a></li>
                         <li><a href="facility&services.html">FACILITY & SERVICE</a></li>
                         <li><a href="contact_us.html">CONTACT US</a></li>
                     </ul>
                 </div>
-                <button type="button" class="btn  btn_rsv for_pc" data-toggle="modal"
-                    data-target="#myModal">BOOKING<br>TEL&nbsp;081-567-281</button>
+                <!-- <button type="button" class="btn  btn_rsv for_pc" data-toggle="modal"
+                    data-target="#myModal">BOOKING<br>TEL&nbsp;081-567-281</button> -->
+                    <a href="https://www.booking.com/hotel/kh/pich-lisa-snntthaagaar-bejr-liisaa.en-gb.html?aid=318615&label=New_English_EN_KH_27027142105-bickLRGJk0Y6UwpZjpjGIQS637942138739%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199482059065%3Alp1009829%3Ali%3Adec%3Adm%3Aag27027142105%3Acmp400679065&sid=186e53f362417885dd7d5215cd6f9270&dest_id=-1023795&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1736233350&srpvid=54b4317a750b04fb&type=total&ucfs=1&" class="btn  btn_rsv for_pc" target="_blank" rel="noopener noreferrer">
+                        BOOKING<br>TEL&nbsp;081-567-281 
+                       </a>
             </nav>
         </div>
     </header>
@@ -163,7 +166,8 @@
     </div>
 
     <!-- search -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   
+    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class=" modaal-inner-wrapper">
                 <div class="modaal-container ">
@@ -184,7 +188,7 @@
                                             method="get" target="_new" rel="noopener">
                                             <div id="searchBox" class="wrp_searchbox">
                                                 <div class="outer_date">
-                                                    <!-- チェックイン -->
+                                                   
                                                     <div class="checkin box_day text-right04">
                                                         <p class="sb_txt text-right02">Check-in</p>
                                                         <input type="date" id="checkin_date" value="checkin_date"
@@ -194,7 +198,7 @@
                                                         <span class="ic"><i class="fa fa-calendar-o"
                                                                 aria-hidden="true"></i></span>
                                                     </div>
-                                                    <!-- 泊数 -->
+                                                  
                                                     <div class="box_sta text-right04">
                                                         <p class="sb_txt text-right02">Night</p>
                                                         <label>
@@ -205,7 +209,7 @@
                                                             </select>
                                                         </label>
                                                     </div>
-                                                    <!-- 部屋数 -->
+                                               
                                                     <div class="box_roo text-right04">
                                                         <p class="sb_txt text-right02">Rooms</p>
                                                         <label>
@@ -218,7 +222,7 @@
                                                             </select>
                                                         </label>
                                                     </div>
-                                                    <!-- 人数 -->
+                                             
                                                     <div class="box_per text-right04">
                                                         <p class="sb_txt text-right02">Adult</p>
                                                         <label>
@@ -230,31 +234,29 @@
                                                             </select>
                                                         </label>
                                                     </div>
-                                                </div><!-- /.outer_date -->
-                                                <!-- 検索ボタン -->
-                                                <!--Search with these conditions-->
+                                                </div>
                                                 <div class="btn_submit">
                                                     <p class="field-button"><input class="btn01" type="submit"
                                                             value="CHECK AVAILABILITY"></p>
                                                 </div>
-                                            </div><!-- /searchbox -->
+                                            </div>
                                         </form>
-                                        <!-- リンク -->
-                                    </div><!-- /.box_search_detail -->
+                                    
+                                    </div>
 
-                                </div><!-- /.box_panel -->
-                            </div><!-- /.box_search -->
+                                </div>
+                            </div>
                             <p class="modal-close-custum">
                                 <span></span>
                                 <span></span>
-                            </p><!-- /.modaal-close -->
+                            </p>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- search -->
 
     <div id="contents">
@@ -320,10 +322,10 @@
                             <img src="assets/img/room/room1.jpg" alt="asiban-room1">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/room/room2.jpg" alt="asiban-room2">
+                            <img src="assets/img/room/lsp_room.jpg" alt="lsp-room2">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/room/room3.jpg" alt="asiban-room3">
+                            <img src="assets/img/room/lsp_room_3.jpg" alt="lsp-room2">
                         </li>
                     </ul>
 
@@ -334,13 +336,13 @@
                 <div class="room_concept">
                     <ul class="room_slide showleft box_img box_img01">
                         <li class="rooms__img_slide">
-                            <img src="assets/img/room/room4.jpg" alt="asiban-room1">
+                            <img src="assets/img/room/TwinRoom/twinroom1.jpg" alt="twinroom1-lsp">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/room/room2.jpg" alt="asiban-room2">
+                            <img src="assets/img/room/TwinRoom/twinroom2.jpg" alt="twinroom2-lsp">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/room/room3.jpg" alt="asiban-room3">
+                            <img src="assets/img/room/TwinRoom/twinroom3.jpg" alt="twinroom3-lsp">
                         </li>
                     </ul>
                     <div class="room_box_concept room_box_concept02">
@@ -379,13 +381,13 @@
                     </div>
                     <ul class="room_slide showleft box_img box_img02">
                         <li class="rooms__img_slide">
-                            <img src="assets/img/bed_sigle_1.jpg" alt="asiban-room1">
+                            <img src="assets/img/room/TripleRoom/triple_room.jpg" alt="lsp-room1">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/bed_sigle_2.jpg" alt="asiban-room2">
+                            <img src="assets/img/room/TripleRoom/triple_room_2.jpg" alt="asiban-room2">
                         </li>
                         <li class="rooms__img_slide">
-                            <img src="assets/img/top-room3.jpg" alt="asiban-room3">
+                            <img src="assets/img/room/TripleRoom/triple_room_2.jpg"  alt="asiban-room3">
                         </li>
                     </ul>
                 </div>
@@ -395,13 +397,13 @@
         <section style="padding-bottom:40px;">
             <div class="row">
                 <div class="col-xl-4 box1">
-                    <img src="assets/img/top-room2.jpg" alt="..." class="">
+                    <img src="assets/img/food_metting_view.jpg" alt="..." class="">
                 </div>
                 <div class="col-xl-4 box2">
-                    <img src="assets/img/bed_sigle_1.jpg" alt="..." class="">
+                    <img src="assets/img/room/TwinRoom/twinroom2.jpg" alt="..." class="">
                 </div>
                 <div class="col-xl-4 box3">
-                    <img src="assets/img/top-room1.jpg" alt="..." class="">
+                    <img src="assets/img/room/room1.jpg" alt="room1" class="">
                 </div>
             </div>
         </section>
@@ -410,7 +412,7 @@
         <footer style="background-color: #6f5c41;">
             <div class="w1920">
                 <div class="footer__wrap">
-                    <p class="footer__img footer_margin"><img src="assets/img/footer.jpg" alt="picture footer"></p>
+                    <p class="footer__img footer_margin"><img src="assets/img/contact_img_lsp.jpg" alt="picture footer"></p>
                     <div class="footer__content" id="footer_content">
                         <div class="footer__contentInr">
                             <address class="footer__address">
@@ -468,7 +470,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p class="w1300">Copyright © HOTEL LSP. All Rights Reserved.</p>
+                <p class="w1300">Copyright © LSP HOTEL. All Rights Reserved.</p>
             </div>
         </footer>
         <!-- /footer -->
@@ -581,7 +583,7 @@
                 if (autoTimer) clearTimeout(autoTimer);
                 autoTimer = null;
             });
-        });
+ });
     </script>
     <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

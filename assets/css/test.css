@@ -1,0 +1,779 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-weight: 200;
+	padding: 0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+/*	font-family: "Yu Gothic";*/
+/*	font-family: "Mplus 1p";*/
+/*	font-family: "Rounded Mplus 1c";*/
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+  font-size: 16px;
+	letter-spacing: 1px;
+	transition: .2s;
+/*    -webkit-transform: scale(1.001,1);
+    -moz-transform: scale(1.001,1);
+    -ms-transform: scale(1.001,1);
+    -o-transform: scale(1.001,1);
+    transform: scale(1.001,1);*/
+}
+
+a:hover{
+  opacity: .8;
+	transition: .2s;
+}
+
+li{
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	color:#111;
+/*    -webkit-transform: scale(1.001,1);
+    -moz-transform: scale(1.001,1);
+    -ms-transform: scale(1.001,1);
+    -o-transform: scale(1.001,1);
+    transform: scale(1.001,1);*/
+}
+
+h1{	
+	letter-spacing: 10px;
+}
+.image_resposive{
+  font-size: 32px;
+  line-height: 45px;
+	letter-spacing: 9px;
+}
+h3{	
+	letter-spacing: 8px;
+}
+h4{	
+	letter-spacing: 7px;
+}
+h5{	
+	letter-spacing: 6px;
+}
+h6{	
+	letter-spacing: 5px;
+}
+p{
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+	letter-spacing: 1px;
+}
+hr{
+}
+
+.clear{
+	clear:both;
+}
+
+.fa{
+	color: #fff;
+}
+body{
+	overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+.spOnly{
+  display: none;
+}
+
+a.linkBtn{
+  display: block;
+  width: 220px;
+  text-align: center;
+  font-family: "Mplus 1p";
+	color:#333;
+  border: 1px solid #333;
+  padding: 15px 0;
+}
+
+a.linkBtn:hover{
+  opacity: 1;
+  background-color: #333;
+  color: #fff;
+}
+
+.flexBox{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.spbr{
+  display: none;
+}
+
+.eng{
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+}
+
+.titleBox{
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.titleBox .image_resposive img{
+  max-width: 100%;
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+
+.titleBox .test_center_name{
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #870000;
+}
+
+.pc{
+}
+
+.sp{
+  display: none;
+}
+
+@media screen and (max-width: 500px){
+  .pc{
+    display: none;
+  }
+
+  .sp{
+    display: block;
+  }
+}
+
+/*==============================
+nav
+==============================*/
+nav{
+  width: 100%;
+  height: 64px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(21,46,78,.8);
+  padding-left: 20px;
+  z-index: 99999;
+}
+
+nav > a{
+  display: block;
+  margin-right: auto;
+}
+
+nav > a img{
+  vertical-align: bottom;
+}
+
+nav > ul{
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li{
+  position: relative;
+  margin-right: 30px;
+}
+
+nav > ul > li input[type="checkbox"]{
+  display: none;
+}
+
+nav > ul > li a,
+nav > ul > li label{
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+nav > ul > li label:hover{
+  opacity: .8;
+  transition: .2s;
+}
+
+nav > ul > li > ul{
+  display: none;
+}
+
+nav > ul > li input[type="checkbox"]:checked ~ ul{
+  position: absolute;
+  display: block;
+  width: 150px;
+  top: 46px;
+  left: -10px;
+}
+
+nav > ul > li > ul li{
+  padding: 5px 10px;
+  background-color: rgba(21,46,78,.8);
+  margin-bottom: 1px;
+}
+
+nav > ul > li > ul li a{
+  font-size: 14px;
+}
+
+nav > ul > li:last-of-type{
+  width: 64px;
+  height: 64px;
+  margin-right: 0;
+  background-color: #870000;
+  text-align: center;
+}
+
+nav > ul > li:last-of-type i{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+nav > ul > li:last-of-type p{
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #fff;
+  line-height: 10px;
+}
+/*==============================
+SPメニュー
+==============================*/
+
+.spnavBack{
+  display: none;
+}
+
+.spLogo{
+	display: none;
+}
+
+.nav-unshown {
+  display:none;
+}
+@media screen and (max-width: 1000px){
+.spnavBack{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 999998;
+  background-color: rgba(255,255,255,.9)
+}
+  
+nav{
+  display: none;
+  padding: 10px 0;
+	margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255,255,255,.9)
+}
+
+nav h1{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav h1 > a{
+  display: block;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+
+/*アイコンのスペース*/
+#nav-open {
+  position: fixed;
+  top:10px;
+	right: 10px;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  background-color: #fff;
+  padding:10px;
+	z-index: 999999;
+}
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 4px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 0px;
+  background: #152e4e;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -10px;
+}
+#nav-open span:after {
+  bottom: -20px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 999999;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+nav {
+  overflow: auto;
+  position: fixed;
+	display: block;
+  top: 0;
+  left: 0;
+	margin: 0;
+  z-index: 1000000;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background-color: rgba(21,46,78,.8);/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+  padding: 50px 20px 0;
+  text-align: center;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ nav {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+  nav > a{
+    margin-bottom: 15px;
+  }
+
+  nav > ul{
+    flex-wrap: wrap;
+  }
+
+  nav > ul > li{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav > ul > li a,
+  nav > ul > li label{
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+  
+  nav > ul > li input[type="checkbox"]:checked ~ ul{
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+  }
+  
+  nav > ul > li input[type="checkbox"]:checked ~ ul li{
+    padding: 0;
+  }
+  
+  nav > ul > li input[type="checkbox"]:checked ~ ul li a{
+    padding: 10px 15px;
+  }
+  
+  nav > ul > li input[type="checkbox"]:checked ~ ul li:last-of-type a{
+    border-bottom: none;
+  }
+  
+  nav > ul > li:nth-last-of-type(2) a{
+    border-bottom: none;
+  }
+  
+  nav > ul > li:last-of-type{
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+  }
+  
+  nav > ul > li:last-of-type a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+  }
+  
+  nav > ul > li:last-of-type a i{
+    margin: 0;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  nav > ul > li:last-of-type a p{
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/*==============================
+TOPボタン
+==============================*/
+
+
+/*==============================
+メインコンテンツ
+==============================*/
+
+/*==============================
+フッタ
+==============================*/
+#footaccessWrap{
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+#footaccessWrap > iframe{
+  width: 100%;
+  height: 380px;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+}
+
+#footaccessWrap > table{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#footaccessWrap > table td{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#footcontactWrap{
+  padding: 50px 20px;
+  background-color: #152e4e;
+  text-align: center;
+}
+
+#footcontactWrap .titleBox h3{
+  color: #fff;
+}
+
+#footcontactWrap > h4{
+  color: #fff;
+  font-weight: bold;
+  font-size: 38px;
+  letter-spacing: 4px;
+}
+
+#footcontactWrap > h5{
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+#footcontactWrap > h5{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+  margin-bottom: 20px;
+}
+
+#footcontactWrap > h5:before,
+#footcontactWrap > h5:after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: #fff;
+	display: block;
+}
+
+#footcontactWrap > h5:before {
+	margin-right: .4em;
+}
+
+#footcontactWrap > h5:after {
+	margin-left: .4em;
+}
+
+#footcontactWrap > div:last-of-type{
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footcontactWrap > div:last-of-type a:first-of-type{
+  width: 60%;
+  margin-right: 3%;
+}
+
+#footcontactWrap > div:last-of-type a:last-of-type{
+  width: 37%;
+}
+
+#footcontactWrap > div:last-of-type a img{
+  width: 100%;
+  display: block;
+}
+
+#footNav{
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#footNav > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#footNav > ul li{
+  margin-right: 20px;
+}
+
+#footNav > ul li::after{
+  content: "/";
+  font-size: 16px;
+  line-height: 16px;
+  color: #152e4e;
+}
+
+#footNav > ul li a{
+  font-size: 16px;
+  line-height: 16px;
+  color: #152e4e;
+  margin-right: 20px;
+}
+
+#footNav > ul li:last-of-type{
+  margin-right: 0;
+}
+
+#footNav > ul li:last-of-type::after{
+  display: none;
+}
+
+#footNav > ul li:last-of-type a{
+  margin-right: 0;
+}
+
+#footNav > a{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+#footNav > a img{
+  vertical-align: bottom;
+}
+
+#footNav > h3{
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #152e4e;
+  margin-bottom: 5px;
+}
+
+#footNav > p{
+  line-height: 26px;
+}
+
+footer > p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/*==============================
+レスポンシブ
+==============================*/
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1000px) {
+  
+  #footaccessWrap > table{
+    max-width: 400px;
+  }
+  
+  #footaccessWrap > table tr{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footaccessWrap > table td:nth-of-type(2n - 1){
+    width: 30%;
+  }
+  
+  #footaccessWrap > table td:nth-of-type(2n){
+    width: 70%;
+  }
+  
+  #footNav > ul li{
+    margin-right: 10px;
+  }
+  
+  #footNav > ul li a{
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 800px) {
+  
+  #footcontactWrap > h4{
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+  
+  #footcontactWrap > h5{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  
+  #footNav > ul{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 50px;
+  }
+  
+  #footNav > ul li{
+    margin-right: 0px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #footNav > ul li::after{
+    display: none;
+  }
+  
+  #footNav > ul li a{
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px){  
+  p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  
+  #footaccessWrap{
+    padding-bottom: 20px;
+  }
+  
+  #footaccessWrap > table{
+    max-width: 300px;
+  }
+  
+  #footaccessWrap > table tr{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footaccessWrap > table td:nth-of-type(2n - 1){
+    width: 100%;
+  }
+  
+  #footaccessWrap > table td:nth-of-type(2n){
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #footcontactWrap > div:last-of-type{
+    display: block;
+  }
+  
+  #footcontactWrap > div:last-of-type a{
+    display: block;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  
+  #footcontactWrap > div:last-of-type a:first-of-type{
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+    margin: 0 auto 10px;
+  }
+  
+  #footcontactWrap > div:last-of-type a:last-of-type{
+    width: 80%;
+    max-width: 300px;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  
+  #footNav{
+    padding: 20px;
+  }
+  
+  #footNav > ul{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px){
+}
+
+@media screen and (max-width: 414px){
+}
+
+
+/*==============================
+ローディングアニメーション
+==============================*/

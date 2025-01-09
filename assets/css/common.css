@@ -1033,7 +1033,6 @@ select {
   #mainheader .logo img{
     width: 100% !important;
     margin-left: 30% !important;
-    background-color: #000;
   }
 }
 @media (max-width: 660px){
@@ -1203,9 +1202,13 @@ select {
     background: url(../images/home/deco_logo.png) 5% 95% no-repeat;
     background-size: 50% auto;
     height: 100%;
-    padding: 7% 4% 6% !important;
+    padding:
+     7% 4% 6% !important;
   }
+
+
 }
+
 .mb05em {
   margin-bottom: 0.5em !important;
 }
@@ -1297,6 +1300,7 @@ a {
   }
 }
 @media (min-width: 1001px) {
+
   #contents {
     overflow: hidden;
   }
@@ -3125,18 +3129,9 @@ a {
     transform: translateX(0);
   }
 } */
-@media only screen and (max-width: 320px) {
-  .vw{
-    /* padding: 6vw; */
-  }
-}
-@media only screen and (max-width: 370px) {
-  .title_none{
-    /* display: none; */
-    font-size: max(10px, 3.2vw);
-  }
-}
-@media only screen and (max-width: 425px) {
+
+
+/* @media only screen and (max-width: 425px) {
   .title_none{
     margin-top: 0px;
   }
@@ -3150,10 +3145,66 @@ a {
     top: 38vw;
     left: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -1; 
     background-color: #fff;
     padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
   }
+
+} */
+@media only screen and (max-width: 425px) {
+  header .fnav {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 36.0vw;
+    left: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-color: #000350;
+    padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .title_none{
+    /* display: none; */
+    font-size: max(10px, 3.2vw);
+  }
+  header .fnav {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 36vw;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* background-color: #fff; */
+    background-color: #2dafb9;
+    padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .vw{
+    /* padding: 6vw; */
+  }
+
+  header .fnav {
+    display: none; /* Initially hidden */
+    width: 100%;
+    position: fixed;
+    top: 40vw;
+    left: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure it's above other elements when visible */
+    background-color: #fff;
+    padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+  }
+
+  /* header .fnav.active {
+    display: block; 
+  } */
+
 }
 .img_center{
   display: flex;

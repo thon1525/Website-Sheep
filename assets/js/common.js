@@ -80,31 +80,44 @@ $(document).ready(function($) {
 /*------------------------------------------------------------
   スマホメニュー
 ------------------------------------------------------------*/
-  if (window.matchMedia( '(max-width: 1000px)' ).matches) {
-
-      // メニュー開閉
-      $('header .open').on('click', function() {
-
-        if( $(this).hasClass("active")){
-          $(this).removeClass("active");
-          $('.fnav').fadeOut(500);
-          $('body').removeClass('open');
-          $("#js_opentxt").html("MENU");
-        } else {
-          $(this).addClass("active");
-          $('.fnav').fadeIn(500);
-          $('body').addClass('open');
-          $("#js_opentxt").html("Close");
-        }
-
-      });
-
-      $('.open__menu').on('click', function() {
-        $(this).next().slideToggle('normal');
+function handleResponsiveMenu() {
+  if (window.matchMedia('(max-width: 1000px)').matches) {
+    // Apply small screen behavior
+    $('header .open').off('click').on('click', function () {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $('.fnav').fadeOut(500); // Apply fadeOut for small screens
+        $('body').removeClass('open');
+        $("#js_opentxt").html("MENU");
+      } else {
+        $(this).addClass("active");
+        $('.fnav').fadeIn(500); // Apply fadeIn for small screens
+        $('body').addClass('open');
+        $("#js_opentxt").html("Close");
+      }
     });
 
-  }// End max-width : 1000px;
+    // Sub-menu toggle
+    $('.open__menu').off('click').on('click', function () {
+      $(this).next().slideToggle('normal');
+    });
+  } else {
+    // Reset styles and behavior for larger screens
+    $('header .open').off('click').removeClass('active');
+    $('.fnav').stop(true, true).css('display', ''); // Reset display without fadeIn or fadeOut
+    $('body').removeClass('open');
+    $("#js_opentxt").html("MENU");
 
+    // Ensure submenus are visible
+    $('.open__menu').off('click').next().css('display', '');
+  }
+}
+
+// Run on page load and window resize
+$(document).ready(handleResponsiveMenu);
+$(window).on('resize', handleResponsiveMenu);
+
+// End max-width : 1000px;
 /*------------------------------------------------------------
   ローディング
 ------------------------------------------------------------*/
