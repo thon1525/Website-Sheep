@@ -1,792 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head prefix="">
-    <meta charset="UTF-8" />
-    <title>LSP About</title>
-    <link rel="icon" href="assets/img/logo.png" />
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1,user-scalable=yes">
+  <meta charset="UTF-8" />
+  <title>LSP About</title>
+  <link rel="icon" href="assets/img/logo.png" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1,user-scalable=yes">
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-N98R5QQ');
-    </script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animsition.min.css">
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/asiban.css">
-    <link rel="stylesheet" href="assets/css/room.css">
-    <!-- <link href="/assets/css/testStyle.css" rel="stylesheet" /> -->
-    <script src="assets/js/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css?v22">
-    <style>
-     @charset "UTF-8";
-/* CSS Document */
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N98R5QQ');
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animsition.min.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/asiban.css">
+  <link rel="stylesheet" href="assets/css/room.css">
+  <!-- <link href="/assets/css/testStyle.css" rel="stylesheet" /> -->
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css?v22">
+  <style>
+    @charset "UTF-8";
+    /* CSS Document */
 
-*{
-	padding: 0;
-	margin:0;
-	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-font-family: YuMincho, "Yu Mincho", 游明朝体, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", 'Noto Serif JP', "ＭＳ 明朝", "MS Mincho";
-  scroll-behavior: smooth;
-}
+    * {
+      padding: 0;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: YuMincho, "Yu Mincho", 游明朝体, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", 'Noto Serif JP', "ＭＳ 明朝", "MS Mincho";
+      scroll-behavior: smooth;
+    }
 
-/*==============================
+    /*==============================
 共通
 ==============================*/
-.header_images{
-  position: relative;
-  height: 400px;
-  /* background-image: url("./assets/img/test_images/headBack.png"); */
-  background-image: url("./assets/img/welcome_lsp.jpg");
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  padding: 0 20px;
-}
+    .header_images {
+      position: relative;
+      height: 430px;
+      /* background-image: url("./assets/img/test_images/headBack.png"); */
+      background-image: url("./assets/img/welcome_lsp.jpg");
+      background-size: cover;
+      background-position: center center;
+      text-align: center;
+      padding: 0 20px;
+    }
 
-.image_screen_small {
-  display: none;
-}
-.companyTable .text_link {
-  color: #17181a;
-  text-decoration: none;
-}
-.header_images > h1{
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  left: 0;
-  bottom: -50px;
-  margin: auto;
-  width: calc(100% - 40px);
-  max-width: 498px;
+    .image_screen_small {
+      display: none;
+    }
 
-}
-.image_ceo{
-  width: auto; 
-  height: 80%; 
-  max-height: 80%; /* Ensures the image doesn’t exceed a reasonable size */
-  object-fit: cover; /* Maintains aspect ratio while covering the container */
-  display: block; /* Ensures no extra space below the image */
-  margin: -4px  auto; /* Centers the image with some spacing */
-  border-radius: 8px; /* Optional: Adds slightly rounded corners */
-}
-.header_images > h1 img{
-  width: 100%;
-  vertical-align: bottom;
-}
+    .companyTable .text_link {
+      color: #17181a;
+      text-decoration: none;
+    }
 
-.headTitle{
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  left: 0;
-  bottom: -50px;
-  margin: auto;
-  width: calc(100% - 60px);
-  max-width: 500px;
-  padding: 30px 0;
-}
+    .header_images>h1 {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      left: 0;
+      bottom: -50px;
+      margin: auto;
+      width: calc(100% - 40px);
+      max-width: 498px;
 
-.headTitle::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: skew(-15deg);
-  -o-transform: skew(-15deg);
-  -moz-transform: skew(-15deg);
-  -webkit-transform: skew(-15deg);
-  background-color: #972a47 !important;
-  z-index: 0;
-}
+    }
 
-.headTitle > *{
-  position: relative;
-  z-index: 2;
-}
+    .image_ceo {
+      width: auto;
+      height: 80%;
+      max-height: 80%;
+      /* Ensures the image doesn’t exceed a reasonable size */
+      object-fit: cover;
+      /* Maintains aspect ratio while covering the container */
+      display: block;
+      /* Ensures no extra space below the image */
+      margin: -4px auto;
+      /* Centers the image with some spacing */
+      border-radius: 8px;
+      /* Optional: Adds slightly rounded corners */
+    }
 
-.headTitle > h1{
-  font-size: 26px;
-  line-height: 26px;
-  letter-spacing: 2px;
-  color: #fff;
-  margin-bottom: 10px;
-}
+    .header_images>h1 img {
+      width: 100%;
+      vertical-align: bottom;
+    }
 
-.headTitle > p{
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  color:      #fff;
-}
+    .headTitle {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      left: 0;
+      bottom: -50px;
+      margin: auto;
+      width: calc(100% - 60px);
+      max-width: 500px;
+      padding: 15px 0;
+    }
 
-@media screen and (max-width: 600px){
-    .header_images{
-    height: 270px;
-  }
-}
+    .headTitle::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: skew(-15deg);
+      -o-transform: skew(-15deg);
+      -moz-transform: skew(-15deg);
+      -webkit-transform: skew(-15deg);
+      background-color: #972a47 !important;
+      z-index: 0;
+    }
 
-/*==============================
+    .headTitle>* {
+      position: relative;
+      z-index: 2;
+    }
+
+    .headTitle>h1 {
+      font-size: 26px;
+      line-height: 26px;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .headTitle>p {
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+      .header_images {
+        height: 270px;
+      }
+    }
+
+    /*==============================
 メイン
 ==============================*/
 
-.titleBox{
-  display: block;
-  text-align: center;
-  margin: 0 auto 20px;
-}
-.image_resposive{
-  font-size: 32px;
-    line-height: 49px;
-    letter-spacing: 6px;
-}
-.titleBox .image_resposive .context_text {
-    max-width: 100%;
-    vertical-align: bottom;
-    margin-bottom: 5px;
-}
+    .titleBox {
+      display: block;
+      text-align: center;
+      margin: 0 auto 20px;
+    }
 
-.titleBox .test_center_name{
-  font-size: 18px;
-  letter-spacing: 2px;
-  color: #870000;
-}
+    .image_resposive {
+      font-size: 32px;
+      line-height: 49px;
+      letter-spacing: 6px;
+    }
 
-#messageWrap{
-  padding: 100px 20px;
-}
+    .titleBox .image_resposive .context_text {
+      max-width: 100%;
+      vertical-align: bottom;
+      margin-bottom: 5px;
+    }
 
-.messageBox{
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+    .titleBox .test_center_name {
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #870000;
+    }
 
-.messageBox > div{
-  text-align: right;
-  margin-right: 20px;
-}
+    #messageWrap {
+      padding: 100px 20px;
+    }
 
-.messageBox > div .text_font_title{
-  font-family: YuMincho, "Yu Mincho", 游明朝体, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", 'Noto Serif JP', "ＭＳ 明朝", "MS Mincho";
-  text-align: left;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: 1px;
+    .messageBox {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
 
+    .messageBox>div {
+      text-align: right;
+      margin-right: 20px;
+    }
 
-  margin-bottom: 20px;
-}
-
-.messageBox > div p{
-  text-align: left;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-#companyWrap{
-  padding: 0 20px 50px;
-}
-
- /* style table */
- #footaccessWrap > table{
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+    .messageBox>div .text_font_title {
+      font-family: YuMincho, "Yu Mincho", 游明朝体, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", 'Noto Serif JP', "ＭＳ 明朝", "MS Mincho";
+      text-align: left;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 1px;
 
 
-.companyTable{
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  
-}
-.companyTable > table th span {
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-  width: 100%;
-  height: 100%;
-  background-color: #152e4e;
-  color: #fff;
-  padding: 10px 0;
-  box-sizing: border-box; /* Include padding in height/width calculations */
-  text-align: center; /* Center text for fallback support */
-}
-.companyTable > table{
-  width: 48%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-#footaccessWrap > table td{
-  font-size: 16px;
-  letter-spacing: 1px;
-}
+      margin-bottom: 20px;
+    }
 
-#footaccessWrap > table td:nth-of-type(2n){
-    width: 70%;
-  }
-.companyTable > table th{
-  width: 25%;
-}
+    .messageBox>div p {
+      text-align: left;
+      text-align: justify;
+      margin-bottom: 20px;
+      margin: 25px 0px;
+    }
 
-.companyTable > table td{
-  width: 75%;
-}
+    #companyWrap {
+      padding: 0 20px 50px;
+    }
 
-.companyTable > table th,
-.companyTable > table td{
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 5px 0;
-  vertical-align: middle;
-  font-size: 15px;
-  line-height: 20px;
-}
+    /* style table */
+    #footaccessWrap>table {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-.companyTable > table th span{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background-color: #972a47 !important;
-  color: #fff;
-  vertical-align: middle;
-  padding: 10px 0;
-}
 
-.companyTable > table td{
-  padding-left: 10px;
-  padding: 10px;
-  font-weight: normal;
-}
+    .companyTable {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
 
-/*==============================
+    }
+
+    .companyTable>table th span {
+      display: flex;
+      /* Use flexbox for alignment */
+      justify-content: center;
+      /* Horizontally center content */
+      align-items: center;
+      /* Vertically center content */
+      width: 100%;
+      height: 100%;
+      background-color: #152e4e;
+      color: #fff;
+      padding: 10px 0;
+      box-sizing: border-box;
+      /* Include padding in height/width calculations */
+      text-align: center;
+      /* Center text for fallback support */
+    }
+
+    .companyTable>table {
+      width: 48%;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    #footaccessWrap>table td {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    #footaccessWrap>table td:nth-of-type(2n) {
+      width: 70%;
+    }
+
+    .companyTable>table th {
+      width: 25%;
+    }
+
+    .companyTable>table td {
+      width: 75%;
+    }
+
+    .companyTable>table th,
+    .companyTable>table td {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 5px 0;
+      vertical-align: middle;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .companyTable>table th span {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-color: #972a47 !important;
+      color: #fff;
+      vertical-align: middle;
+      padding: 10px 0;
+    }
+
+    .companyTable>table td {
+      padding-left: 10px;
+      padding: 10px;
+      font-weight: normal;
+    }
+
+    /*==============================
 レスポンシブ
 ==============================*/
 
-@media screen and (max-width: 1400px) {
-}
+    @media screen and (max-width: 1400px) {}
 
-@media screen and (max-width: 1300px) {
-}
+    @media screen and (max-width: 1300px) {}
 
-@media screen and (max-width: 1200px) {
-}
+    @media screen and (max-width: 1200px) {}
 
-@media screen and (max-width: 1000px) {
-  /*ハンバーガーアイコンをCSSだけで表現*/
-#nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 4px;/*線の太さ*/
-  width: 25px;/*長さ*/
-  border-radius: 0px;
-  background: #152e4e;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-#nav-open span:before {
-  bottom: -10px;
-}
-#nav-open span:after {
-  bottom: -20px;
-}
-#footaccessWrap > table td:nth-of-type(2n){
-    width: 70%;
-  }
-  #footaccessWrap > table{
-    max-width: 400px;
-  }
-  #footaccessWrap > table tr{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #footaccessWrap > table tr{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #footaccessWrap > table td:nth-of-type(2n - 1){
-    width: 30%;
-  }
-  
-  #footaccessWrap > table td:nth-of-type(2n){
-    width: 70%;
-  }
-  
-  #footNav > ul li{
-    margin-right: 10px;
-  }
-  
-  #footNav > ul li a{
-    margin-right: 10px;
-  }
-}
+    @media screen and (max-width: 1000px) {
 
-@media screen and (max-width: 800px) {
-  .messageBox > img{
-    width: 50%;
+      /*ハンバーガーアイコンをCSSだけで表現*/
+      #nav-open span,
+      #nav-open span:before,
+      #nav-open span:after {
+        position: absolute;
+        height: 4px;
+        /*線の太さ*/
+        width: 25px;
+        /*長さ*/
+        border-radius: 0px;
+        background: #152e4e;
+        display: block;
+        content: '';
+        cursor: pointer;
+      }
+
+      #nav-open span:before {
+        bottom: -10px;
+      }
+
+      #nav-open span:after {
+        bottom: -20px;
+      }
+
+      #footaccessWrap>table td:nth-of-type(2n) {
+        width: 70%;
+      }
+
+      #footaccessWrap>table {
+        max-width: 400px;
+      }
+
+      #footaccessWrap>table tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #footaccessWrap>table tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #footaccessWrap>table td:nth-of-type(2n - 1) {
+        width: 30%;
+      }
+
+      #footaccessWrap>table td:nth-of-type(2n) {
+        width: 70%;
+      }
+
+      #footNav>ul li {
+        margin-right: 10px;
+      }
+
+      #footNav>ul li a {
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .messageBox>img {
+        width: 50%;
         align-self: flex-start;
         height: 29%;
         max-height: 80%;
-  }
+      }
 
-  .messageBox > div h4{
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 26px;
-  }
-  
-  .messageBox > div > img{
-    max-width: 80%;
-  }
-  
-  .companyTable{
-    display: block;
-    max-width: 600px;
-  }
-  
-  .companyTable > table{
-    width: 100%;
-  }
-  
-  .companyTable > table:first-of-type tr:last-of-type th,
-  .companyTable > table:first-of-type tr:last-of-type td{
-    border-bottom: none;
-  }
-}
+      .messageBox>div h4 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 26px;
+      }
 
-@media screen and (max-width: 768px){
-  .messageBox > img{
-    display: none;
-    align-self: flex-end;
-  }
-.messageBox >  .image_screen_small {
-  display: block;
-  margin: 0 auto; /* Ensures image centers within its container */
-  width: 50%;
-  max-width: 100%; /* Ensures the image is responsive */
-}
+      .messageBox>div>img {
+        max-width: 80%;
+      }
 
-}
+      .companyTable {
+        display: block;
+        max-width: 600px;
+      }
 
-@media screen and (max-width: 600px){
-  .messageBox > div h4{
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-  .image_screen_small {
-  display: block;
-}
-  /* .messageBox > img{
+      .companyTable>table {
+        width: 100%;
+      }
+
+      .companyTable>table:first-of-type tr:last-of-type th,
+      .companyTable>table:first-of-type tr:last-of-type td {
+        border-bottom: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .messageBox>img {
+        display: none;
+        align-self: flex-end;
+      }
+
+      .messageBox>.image_screen_small {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        max-width: 100%;
+
+      }
+
+      .messageBox .image_screen_small {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        max-width: 100%;
+      }
+
+      .headTitle {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        bottom: -50px;
+        margin: auto;
+        width: calc(100% - 60px);
+        max-width: 500px;
+        padding: 10px 0;
+      }
+
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .messageBox>div h4 {
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+
+      .image_screen_small {
+        display: block;
+      }
+
+      /* .messageBox > img{
     display: none;
     align-self: flex-end;
   } */
-  #footaccessWrap > table{
-    max-width: 300px;
-  }
+      #footaccessWrap>table {
+        max-width: 300px;
+      }
 
-  #footaccessWrap > table tr{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .messageBox > div{
-    margin-right: 10px;
-  }
-  #footaccessWrap > table td:nth-of-type(2n){
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-}
+      #footaccessWrap>table tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-@media screen and (max-width: 414px){
-}
-    </style>
+      .messageBox>div {
+        margin-right: 10px;
+      }
+
+      #footaccessWrap>table td:nth-of-type(2n) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    @media screen and (max-width: 414px) {
+
+      .messageBox .image_screen_small {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+        max-width: 100%;
+    }
+
+    }
+  </style>
 </head>
-<body id="top" class="index">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N98R5QQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    <div class="reload_page">
-        <img src="assets/img/Dual Ring-1s-54px.gif" alt="">
+<body id="top" class="index">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N98R5QQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="reload_page">
+    <img src="assets/img/Dual Ring-1s-54px.gif" alt="">
+  </div>
+  <div class="header_images">
+    <div class="headTitle">
+      <h1>lsp Hotel</h1>
+      <p>About</p>
     </div>
-    <div class="header_images">
-        <div class="headTitle">
-          <h1>lsp Hotel</h1>
-          <p>About</p>
+  </div>
+  <header id="mainheader">
+   
+
+    <div class="mainheader__inr">
+        <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="lsphotell"></a></h1>
+        <div id="spnav" class="for_sp">
+            <ul>
+                <li class="btn_rsv vw"><a href="tel:019-625-2222" target="_blank">
+                        <p class="img_center"><img src="https://www.hotel-newcarina.co.jp/images/header_icon01.svg">
+                        </p>
+                        <h5 class="title title_none">TELEPHONE</h5>
+                    </a></li>
+                <li class="btn_rsv vw"><a href="https://www.booking.com/hotel/kh/pich-lisa-snntthaagaar-bejr-liisaa.en-gb.html?aid=318615&label=New_English_EN_KH_27027142105-bickLRGJk0Y6UwpZjpjGIQS637942138739%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199482059065%3Alp1009829%3Ali%3Adec%3Adm%3Aag27027142105%3Acmp400679065&sid=186e53f362417885dd7d5215cd6f9270&dest_id=-1023795&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1736233350&srpvid=54b4317a750b04fb&type=total&ucfs=1&" target="_blank" rel="noopener noreferrer">
+                        <p class="img_center"><img src="https://www.hotel-newcarina.co.jp/images/icon_srch.svg"></p>
+                        <h5 class="title title_none none">RESERVATION</h5>
+                    </a></li>
+                <li class="btn_rsv span_top"><a href="#open" class="open">
+                        <p class="img_center"><span></span><span></span><span></span></p>
+                        <h5 class="title title_none" id="js_opentxt">MENU</h5>
+                    </a></li>
+            </ul>
         </div>
-      </div>
-    <header id="mainheader">
-        <div class="mainheader__inr">
-            <h1 class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="lsphotell"></a></h1>
-            <div id="spnav" class="for_sp">
+        <nav class="fnav">
+            <div class="fnav__wrap">
                 <ul>
-                    <li class="btn_rsv vw"><a href="tel:019-625-2222" target="_blank">
-                            <p><img src="https://www.hotel-newcarina.co.jp/images/header_icon01.svg"></p>
-                            <h5 class="title title_none">TELEPHONE</h5>
-                        </a></li>
-                    <li class="btn_rsv vw"><a href="https://www.booking.com/hotel/kh/pich-lisa-snntthaagaar-bejr-liisaa.en-gb.html?aid=318615&label=New_English_EN_KH_27027142105-bickLRGJk0Y6UwpZjpjGIQS637942138739%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199482059065%3Alp1009829%3Ali%3Adec%3Adm%3Aag27027142105%3Acmp400679065&sid=186e53f362417885dd7d5215cd6f9270&dest_id=-1023795&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1736233350&srpvid=54b4317a750b04fb&type=total&ucfs=1&" target="_blank" rel="noopener noreferrer">
-                            <p><img src="https://www.hotel-newcarina.co.jp/images/icon_srch.svg"></p>
-                            <h5 class="title title_none none">RESERVATION</h5>  
-                        </a></li>
-                    <li class="btn_rsv span_top"><a href="#open" class="open">
-                            <p><span></span><span></span><span></span></p>
-                            <!-- <h5 id="js_opentxt">MENU</h5> -->
-                        </a></li>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="room.html">ROOMS</a></li>
+                    <li><a href="profile_about.html">ABOUT</a></li>
+                    <li><a href="facility&services.html">FACILITY & SERVICE</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <nav class="fnav">
-                <div class="fnav__wrap">
-                    <ul>
-                        <li><a href="index.html">TOP</a></li>
-                        <li><a href="room.html">ROOMS</a></li>
-                        <li><a href="profile_about.html">ABOUT</a></li>
-                        <li><a href="facility&services.html">FACILITY & SERVICE</a></li>
-                        <li><a href="contact_us.html">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <!-- <button type="button" class="btn  btn_rsv for_pc" data-toggle="modal" data-target="#myModal">BOOKING<br>TEL&nbsp;081-567-281</button> -->
+            <!-- <button type="button" class="btn  btn_rsv for_pc" data-toggle="modal"
+                data-target="#myModal">BOOKING<br>TEL&nbsp;081-567-281</button> -->
                 <a href="https://www.booking.com/hotel/kh/pich-lisa-snntthaagaar-bejr-liisaa.en-gb.html?aid=318615&label=New_English_EN_KH_27027142105-bickLRGJk0Y6UwpZjpjGIQS637942138739%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199482059065%3Alp1009829%3Ali%3Adec%3Adm%3Aag27027142105%3Acmp400679065&sid=186e53f362417885dd7d5215cd6f9270&dest_id=-1023795&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1736233350&srpvid=54b4317a750b04fb&type=total&ucfs=1&" class="btn  btn_rsv for_pc" target="_blank" rel="noopener noreferrer">
                     BOOKING<br>TEL&nbsp;081-567-281 
                    </a>
-
-            </nav>
+        </nav>
+    </div>
+</header>
+  <!-- / #mainvisuals -->
+  <article>
+    <section id="messageWrap">
+      <div class="titleBox">
+        <h2 class="image_resposive"> <span class="context_text">Message</span> </h2>
+        <h3 class="test_center_name">LSP hotel</h3>
+      </div>
+      <div class="messageBox">
+        <div>
+          <h4 class="text_font_title">
+            Welcome to<br /> LSP Hotel – Your Tranquil Retreat<br />
+            in Sihanoukville.
+          </h4>
+          <img class="image_screen_small" src="./assets/img/ceo.png" alt="lsp-fouder" />
+          <p>Thank you for visiting the website of pich lisa hotel</p>
+          <p>
+            Nestled in the heart of Sihanoukville, LSP Hotel offers an exceptional blend of modern comfort and serene
+            aesthetics<br /><br />
+            Conveniently located near Wat Leu and the Sihanoukville Bus Terminal, our 4-star property provides easy
+            access to the city's key attractions, including Serendipity Beach Pier (2.5 miles) and the picturesque Kbal
+            Chhay Waterfalls (8 miles).<br /><br />
+            Our 75 cozy and stylish rooms are designed with a simple and calm style, featuring soft lighting and natural
+            wooden touches. Each room includes air-conditioning, free WiFi, a private bathroom, an electric tea pot, and
+            a refrigerator for your comfort. Some rooms also have private balconies with beautiful city views and sea
+            view, making your stay at LSP Hotel peaceful and enjoyable.<br /><br />
+            At LSP Hotel, our 24-hour front desk team is always ready to assist, communicating fluently in English,
+            Khmer, and Chinese to ensure seamless communication and personalized service throughout your stay.
+          </p>
+          <img src="./assets/img/test_images/name-signaturely.svg" alt="Representative Director Nobufumi Takahashi" />
         </div>
-    </header>
-    <!-- / #mainvisuals -->
-    <article>
-        <section id="messageWrap">
-            <div class="titleBox">
-                <h2 class="image_resposive">     <span class="context_text">Message</span> </h2>
-                <h3 class="test_center_name">LSP hotel</h3>
-              </div>
-          <div class="messageBox">
-            <div>
-                <h4 class="text_font_title">
-                  Welcome to<br /> LSP Hotel – Your Tranquil Retreat<br />
-                  in Sihanoukville.
-                </h4>
-                <img class="image_screen_small" src="./assets/img/ceo.png" alt="lsp-fouder" />
-                <p>Thank you for visiting the website of pich lisa  hotel</p>
-                <p>
-                  Nestled in the heart of Sihanoukville, LSP Hotel offers an exceptional blend of modern comfort and serene aesthetics<br /><br />
-                  Conveniently located near Wat Leu and the Sihanoukville Bus Terminal, our 4-star property provides easy access to the city's key attractions, including Serendipity Beach Pier (2.5 miles) and the picturesque Kbal Chhay Waterfalls (8 miles).<br /><br />
-                  Our 75 cozy and stylish rooms are designed with a simple and calm style, featuring soft lighting and natural wooden touches. Each room includes air-conditioning, free WiFi, a private bathroom, an electric tea pot, and a refrigerator for your comfort. Some rooms also have private balconies with beautiful city views and sea view, making your stay at LSP Hotel peaceful and enjoyable.<br /><br />
-                  At LSP Hotel, our 24-hour front desk team is always ready to assist, communicating fluently in English, Khmer, and Chinese to ensure seamless communication and personalized service throughout your stay.
-                </p>
-                <img src="./assets/img/test_images/name-signaturely.svg" alt="Representative Director Nobufumi Takahashi" />
-              </div>
-              
-            <img class="image_ceo" src="./assets/img/ceo.png" alt="lsp-fouder" />
-          </div>
-        </section>
-        <section id="companyWrap">
-          <div class="titleBox">
-            <h2>
-              
-              <!-- <img src="./assets/img/test_images/company_profile.png" alt="Company Profile" /> -->
-              <span class="context_text">Company Profile</span>
-            </h2>
-            <h3 class="test_center_name">Company Profile</h3>
-          </div>
-          <div class="companyTable">
-            <table>
-              <tr>
-                <th><span>Company Name</span></th>
-                <td>LSP Hotel</td>
-              </tr>
-              <tr>
-                <th><span>location</span></th>
-                <td>Phum 3, Sangkat 1, Sihanoukville, Cambodia</td>
-              </tr>
-              <tr>
-                <th><span>Established</span></th>
-                <td>December 15, 2018.</td>
-              </tr>
-              <tr>
-                <th><span>Business Content	</span></th>
-                <td>Hotel Services</td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <th><span>city</span></th>
-                <td>Sihanoukville</td>
-              </tr>
-              <tr>
-                <th><span>Representative Director</span></th>
-                <td>pich lisa</td>
-              </tr>
-              <tr>
-                <th><span>MAIL</span></th>
-                <td>lsphotel@gmail.com</td>
-              </tr>
-              <tr>
-                <th><span>TEL</span></th>
-                <td>011 799668</td>
-              </tr>
-              <tr>
-                <th><span>FAX</span></th>
-                <td>011 799668</td>
-              </tr>
-              <tr>
-                <th><span>Personal Information Protection Declaration</span></th>
-                <td>
-                  <a class="text_link"
-                    >Personal Information Protection Declaration</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th><span>Partnership Building Declaration</span></th>
-                <td>
-                  <a class="text_link"
-                    >Partnership Building Declaration</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th><span>Status of initiatives to utilize digital technology and promote digital transformation</span></th>
-                <td>
-                  <a class="text_link"
-                    >Status of initiatives to utilize digital technology and promote digital transformation</a
-                  >
-                </td>
-              </tr>
-            </table>
-          </div>
-        </section>
-      </article>
-    <!-- / #mainvisuals -->
 
-  
-    
-    <div id="contents">
-        
-        <!-- footer -->
-        <footer style="background-color: #6f5c41;" >
-            <div class="w1920">
-                <div class="footer__wrap">
-                    <p class="footer__img footer_margin"><img src="assets/img/contact_img_lsp.jpg" alt="picture footer"></p>
-                    <div class="footer__content" id="footer_content">
-                        <div class="footer__contentInr">
-                            <address class="footer__address">
-                                <li><a href="">Address : Pich Lisa Hotel សណ្ឋាគារ ពេជ្រ លីសា, Phum 3, Sangkat 1, Sihanoukville,
-                                    Cambodia</li></a><br>
-                                <li><a href="tel:081-567-281">Tel : 011 799668 / 088 8886655</a></li>
-                                     <div class="social-media">
-                                    <div class="btn_wh button_wh">
-                                        <a class="three_btncenter" target="_blank" href="https://www.facebook.com/profile.php?id=61566550947369">
-                                            <img class="iconmedia_buton" style="width: 35px;"
-                                                src="assets/img/facebook.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="btn_wh button_wh">
-                                        <a class="three_btncenter" href="#" target="_blank">
-                                            <img class="iconmedia_buton" style="width: 35px;"
-                                                src="assets/img/telegram.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="btn_wh button_wh">
-                                        <a class="three_btncenter" href="https://www.tiktok.com/@lsp.hotel" target="_blank">
-                                            <img class="iconmedia_buton" style="width: 35px;"
-                                                src="assets/img/tik-tok.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="btn_wh button_wh">
-                                        <a class="three_btncenter" href="#">
-                                            <img class="iconmedia_buton" style="width: 35px;"
-                                                src="assets/img/instgram.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </address>
-                            
-                            <nav class="footer__navWrap YuMincho footer_font">
-                                <ul>
-                                    <li><a href="index.html">TOP</a></li>
-                                    <li>
-                                        <a href="room.html">ROOMS</a>
-                                    </li>
-                                </ul>
-  
-                                <div class="footer__navMain footer_font">
-                                    <ul>
-                                        <li><a href="guest_moment.html">GUEST MOMENT</a></li>
-                                        <li><a href="facility&services.html">FACILTY & SERVICE</a></li>
-                                        <li><a href="facility&services.html">SERVICE</a></li>
-                                        <li><a href="tel:081-567-281">CONTACT US</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div id="page-top" class="">
-                            <img src="assets/img/pagetop.svg" alt="PAGETOP">
-                        </div>
-                    </div>
+        <img class="image_ceo" src="./assets/img/ceo.png" alt="lsp-fouder" />
+      </div>
+    </section>
+    <section id="companyWrap">
+      <div class="titleBox">
+        <h2>
+
+          <!-- <img src="./assets/img/test_images/company_profile.png" alt="Company Profile" /> -->
+          <span class="context_text">Company Profile</span>
+        </h2>
+        <h3 class="test_center_name">Company Profile</h3>
+      </div>
+      <div class="companyTable">
+        <table>
+          <tr>
+            <th><span>Company Name</span></th>
+            <td>LSP Hotel</td>
+          </tr>
+          <tr>
+            <th><span>location</span></th>
+            <td>Phum 3, Sangkat 1, Sihanoukville, Cambodia</td>
+          </tr>
+          <tr>
+            <th><span>Established</span></th>
+            <td>December 15, 2018.</td>
+          </tr>
+          <tr>
+            <th><span>Business Content </span></th>
+            <td>Hotel Services</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th><span>city</span></th>
+            <td>Sihanoukville</td>
+          </tr>
+          <tr>
+            <th><span>Representative Director</span></th>
+            <td>pich lisa</td>
+          </tr>
+          <tr>
+            <th><span>MAIL</span></th>
+            <td>lsphotel@gmail.com</td>
+          </tr>
+          <tr>
+            <th><span>TEL</span></th>
+            <td>011 799668</td>
+          </tr>
+          <tr>
+            <th><span>FAX</span></th>
+            <td>011 799668</td>
+          </tr>
+          <tr>
+            <th><span>Personal Information Protection Declaration</span></th>
+            <td>
+              <a class="text_link">Personal Information Protection Declaration</a>
+            </td>
+          </tr>
+          <tr>
+            <th><span>Partnership Building Declaration</span></th>
+            <td>
+              <a class="text_link">Partnership Building Declaration</a>
+            </td>
+          </tr>
+          <tr>
+            <th><span>Status of initiatives to utilize digital technology and promote digital transformation</span></th>
+            <td>
+              <a class="text_link">Status of initiatives to utilize digital technology and promote digital
+                transformation</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </article>
+  <!-- / #mainvisuals -->
+
+
+
+  <div id="contents">
+
+    <!-- footer -->
+    <footer style="background-color: #6f5c41;">
+      <div class="w1920">
+        <div class="footer__wrap">
+          <p class="footer__img footer_margin"><img src="assets/img/contact_img_lsp.jpg" alt="picture footer"></p>
+          <div class="footer__content" id="footer_content">
+            <div class="footer__contentInr">
+              <address class="footer__address">
+                <li><a href="">Address : Pich Lisa Hotel សណ្ឋាគារ ពេជ្រ លីសា, Phum 3, Sangkat 1, Sihanoukville,
+                    Cambodia</li></a><br>
+                <li><a href="tel:081-567-281">Tel : 011 799668 / 088 8886655</a></li>
+                <div class="social-media">
+                  <div class="btn_wh button_wh">
+                    <a class="three_btncenter" target="_blank"
+                      href="https://www.facebook.com/profile.php?id=61566550947369">
+                      <img class="iconmedia_buton" style="width: 35px;" src="assets/img/facebook.png" alt="">
+                    </a>
+                  </div>
+                  <div class="btn_wh button_wh">
+                    <a class="three_btncenter" href="#" target="_blank">
+                      <img class="iconmedia_buton" style="width: 35px;" src="assets/img/telegram.png" alt="">
+                    </a>
+                  </div>
+                  <div class="btn_wh button_wh">
+                    <a class="three_btncenter" href="https://www.tiktok.com/@lsp.hotel" target="_blank">
+                      <img class="iconmedia_buton" style="width: 35px;" src="assets/img/tik-tok.png" alt="">
+                    </a>
+                  </div>
+                  <div class="btn_wh button_wh">
+                    <a class="three_btncenter" href="#">
+                      <img class="iconmedia_buton" style="width: 35px;" src="assets/img/instgram.png" alt="">
+                    </a>
+                  </div>
                 </div>
-            </div>
-            <div class="copyright">
-                <p class="w1300">Copyright © LSP HOTEL. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <!-- /footer -->
+              </address>
 
-</div>
+              <nav class="footer__navWrap YuMincho footer_font">
+                <ul>
+                  <li><a href="index.html">TOP</a></li>
+                  <li>
+                    <a href="room.html">ROOMS</a>
+                  </li>
+                </ul>
 
-<!-- scroll header -->
-<script>
+                <div class="footer__navMain footer_font">
+                  <ul>
+                    <li><a href="guest_moment.html">GUEST MOMENT</a></li>
+                    <li><a href="facility&services.html">FACILTY & SERVICE</a></li>
+                    <li><a href="facility&services.html">SERVICE</a></li>
+                    <li><a href="tel:081-567-281">CONTACT US</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div id="page-top" class="">
+              <img src="assets/img/pagetop.svg" alt="PAGETOP">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="w1300">Copyright © LSP HOTEL. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+
+  <!-- scroll header -->
+  <script>
     const navbar = document.querySelector(".mainheader__inr .logo")
     window.onscroll = () => {
-        navbar.classList.remove('active')
-        if(window.scrollY > 0) {
-            document.querySelector(".mainheader__inr").classList.add("active")
-            document.querySelector(".logo").classList.add("active")
-        }else {
-            document.querySelector(".mainheader__inr").classList.remove("active")
-        }
+      navbar.classList.remove('active')
+      if (window.scrollY > 0) {
+        document.querySelector(".mainheader__inr").classList.add("active")
+        document.querySelector(".logo").classList.add("active")
+      } else {
+        document.querySelector(".mainheader__inr").classList.remove("active")
+      }
     }
-</script>
-<!-- scroll header -->
+  </script>
+  <!-- scroll header -->
 
-<script>
-    $(document).ready(function() {
-        function loader() {
-            $('.reload_page').addClass('fade-out');
-            }
-            $(document).ready(function(){
-            setInterval(loader, 2000);
-            })
-        $('.mvslide').slick({
-            autoplay: true,
-            infinite: true,
-            fade: true,
-            arrows: false,
-            dots: true,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            autoplaySpeed: 2000,
-            speed: 1000
-        });
-        $('.loopslider').slick({
-            autoplay: true, // 自動でスクロール
-            speed: 1000, // スライドが流れる速度を設定
-            autoplaySpeed: 2000,
-            variableWidth: true,
-            centerMode: true,
-            infinite: true,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            dots: true,
-            responsive: [{
-                breakpoint: 750,
-                settings: {
-                    slidesToShow: 1, // 画面幅750px以下でスライド3枚表示
-                    variableWidth: false,
-                }
-            }]
-        });
-
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $('.room_slide').slick({
-            autoplay: true,
-            infinite: true,
-            fade: true,
-            arrows: false,
-            dots: true,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            autoplaySpeed: 2000,
-            speed: 1000
-        });
+  <script>
+    $(document).ready(function () {
+      function loader() {
+        $('.reload_page').addClass('fade-out');
+      }
+      $(document).ready(function () {
+        setInterval(loader, 2000);
+      })
+      $('.mvslide').slick({
+        autoplay: true,
+        infinite: true,
+        fade: true,
+        arrows: false,
+        dots: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        autoplaySpeed: 2000,
+        speed: 1000
+      });
+      $('.loopslider').slick({
+        autoplay: true, // 自動でスクロール
+        speed: 1000, // スライドが流れる速度を設定
+        autoplaySpeed: 2000,
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        dots: true,
+        responsive: [{
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 1, // 画面幅750px以下でスライド3枚表示
+            variableWidth: false,
+          }
+        }]
+      });
 
     });
-    $(document).ready(function() {
-        $("div#panel").show();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.room_slide').slick({
+        autoplay: true,
+        infinite: true,
+        fade: true,
+        arrows: false,
+        dots: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        autoplaySpeed: 2000,
+        speed: 1000
+      });
 
-        var autoTimer = null;
-
-        autoTimer = setTimeout(function() {
-            $("div#panel").slideDown("slow");
-            autoTimer = setTimeout(function() {
-                $("div#panel").slideUp("slow");
-            }, 5000);
-        }, 2000);
-
-        $("#open").click(function() {
-            $("div#panel").slideDown("slow");
-            if (autoTimer) clearTimeout(autoTimer);
-            autoTimer = null;
-        });
-
-        $("#close").click(function() {
-            $("div#panel").slideUp("slow");
-            if (autoTimer) clearTimeout(autoTimer);
-            autoTimer = null;
-        });
     });
-</script>
-<script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    $(document).ready(function () {
+      $("div#panel").show();
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      var autoTimer = null;
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/common.js"></script>
-<script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.smoothScroll.js"></script>
-<script type="text/javascript" src="assets/js/slick.js"></script>
-<!-- webfont -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-<!-- webfont -->
+      autoTimer = setTimeout(function () {
+        $("div#panel").slideDown("slow");
+        autoTimer = setTimeout(function () {
+          $("div#panel").slideUp("slow");
+        }, 5000);
+      }, 2000);
+
+      $("#open").click(function () {
+        $("div#panel").slideDown("slow");
+        if (autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+      });
+
+      $("#close").click(function () {
+        $("div#panel").slideUp("slow");
+        if (autoTimer) clearTimeout(autoTimer);
+        autoTimer = null;
+      });
+    });
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/common.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.smoothScroll.js"></script>
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- webfont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- webfont -->
 
 </body>
+
 </html>

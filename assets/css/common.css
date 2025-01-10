@@ -1015,11 +1015,20 @@ select {
 }
 @media (max-width: 1000px){
   #mainheader .logo img{
-    width: 100% !important;
+    width: 70% !important;
     margin-left: 50% !important;
   }
 }
 @media (max-width: 768px){
+     #mainheader .logo {
+      min-width: 133px;
+      position: relative;
+      margin: 5px -10% 5px -4.6% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.8s;
+    }
   #mainheader #spnav ul {
     display: flex;
     width: 70% !important;
@@ -1031,7 +1040,7 @@ select {
     font-size: 1.1rem !important;
   }
   #mainheader .logo img{
-    width: 100% !important;
+    width: 77% !important;
     margin-left: 30% !important;
   }
 }
@@ -2553,7 +2562,7 @@ a {
     display: none;
     width: 100%;
     position: fixed;
-    top: 23vw;
+    top: 17vw;
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -2571,7 +2580,7 @@ a {
     top: 0;
     z-index: 20000;
     background: #ffffff;
-    /* height: 16vw; */
+    height: 17vw;
   }
   #mainheader .mainheader__inr {
     display: flex;
@@ -3152,7 +3161,7 @@ a {
 
 } */
 @media only screen and (max-width: 425px) {
-  header .fnav {
+  /* header .fnav {
     display: none;
     width: 100%;
     position: fixed;
@@ -3162,7 +3171,7 @@ a {
     z-index: -1; 
     background-color: #000350;
     padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
-  }
+  } */
 }
 
 @media only screen and (max-width: 370px) {
@@ -3170,7 +3179,7 @@ a {
     /* display: none; */
     font-size: max(10px, 3.2vw);
   }
-  header .fnav {
+  /* header .fnav {
     display: none;
     width: 100%;
     position: fixed;
@@ -3178,27 +3187,13 @@ a {
     left: 0;
     bottom: 0;
     z-index: -1;
-    /* background-color: #fff; */
     background-color: #2dafb9;
     padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
-  }
+  } */
 }
 @media only screen and (max-width: 320px) {
   .vw{
     /* padding: 6vw; */
-  }
-
-  header .fnav {
-    display: none; /* Initially hidden */
-    width: 100%;
-    position: fixed;
-    top: 40vw;
-    left: 0;
-    bottom: 0;
-    z-index: -1; /* Ensure it's above other elements when visible */
-    background-color: #fff;
-    padding: calc(130 / 750 * 100vw) calc(65 / 750 * 100vw) calc(80 / 750 * 100vw) calc(65 / 750 * 100vw);
-    overflow-y: auto; /* Allow scrolling if the content overflows */
   }
 
   /* header .fnav.active {
@@ -3285,19 +3280,24 @@ to {
     top: 0;
     z-index: 20000;
     background: #ffffff;
-    /* height: 0vw !important; */
+   height: 18vw;
+  }
+  header .fnav {
+    top: 18vw;
   }
 }
 @media only screen and (max-width: 554px) {
-  #mainheader {
-    width: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 20000;
-    background: #ffffff;
-    /* height: 16vw; */
+  header .fnav {
+    top: 20vw;
   }
+  #mainheader {
+    
+    height: 20vw;
+  }
+
+  /* #spnav ul li a {
+    padding: 2.5vw;
+} */
   .mg_width{
     margin: auto;
     width: 95%;
@@ -3322,19 +3322,21 @@ to {
     width: 95%;
   }
 }
+@media only  screen and (max-width: 433px) {
+  header .fnav {
+    top: 24vw;
+  }
+  #mainheader {
+    
+    height: 24vw;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .btn_more {
     margin-top: 15px !important;
   }
-  #mainheader {
-    width: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 20000;
-    background: #ffffff;
-    /* height: 16vw; */
-  }
+
 }
 @media  (max-width: 547px) {
     .btn_more {
@@ -3523,21 +3525,7 @@ to {
     display: none !important;
   } */
 }
-@media only screen and (min-width: 320px){
-  .top-header-login {
-    display: inline-block;
-    float: right;
-    padding: 4px 13px 4px;
-  }
-  .ad-top-header{
-    background-color: #6f5c40;
-    color: #fff;
-    font-size: 14px;
-    /* text-transform: uppercase; */
-    position: relative;
-    padding: 10px 5px 10px 0px;
-  }
-}
+
 @media only screen and (max-width: 494px) {
   /* .top_two{
     display: flex !important; 
@@ -3583,6 +3571,28 @@ to {
   #stopnav{
     display: flex !important;
   } */
+}
+@media only screen and (max-width: 340px){
+  .top-header-login {
+    display: inline-block;
+    float: right;
+    padding: 4px 13px 4px;
+  }
+  .ad-top-header{
+    background-color: #6f5c40;
+    color: #fff;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    position: relative;
+    padding: 10px 5px 10px 0px;
+  }
+  header .fnav {
+    top: 24vw;
+  }
+  #mainheader {
+    
+    height: 24vw;
+  }
 }
 /* -----------------------------------------------------------
 	CSS Top header
