@@ -2760,6 +2760,11 @@ a {
   }
   /* footer
   ---------------------------------------------------------------------- */
+  .footer__wrap *:hover {
+    color: #ab8f22 ;
+    overflow: hidden;
+    text-decoration: none;
+  }
   footer {
     background-color: #6D4D3B;
   }
