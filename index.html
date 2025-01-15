@@ -462,12 +462,47 @@
         <!-- /footer -->
 
     </div>
+<script>
+    /*------------------------------------------------------------
+  スマホメニュー
+------------------------------------------------------------*/
+function handleResponsiveMenu() {
+  if (window.matchMedia('(max-width: 1000px)').matches) {
+    // Apply small screen behavior
+    $('header .open').off('click').on('click', function () {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $('.fnav').fadeOut(500); // Apply fadeOut for small screens
+        $('body').removeClass('open');
+        $("#js_opentxt").html("MENU");
+      } else {
+        $(this).addClass("active");
+        $('.fnav').fadeIn(500); // Apply fadeIn for small screens
+        $('body').addClass('open');
+        $("#js_opentxt").html("Close");
+      }
+    });
 
-    <!-- /contents -->
-    <link rel="stylesheet" href="/css/slick.css" type="text/css">
-    <link rel="stylesheet" href="/css/slick-theme.css" type="text/css">
-    <script type="text/javascript" src="/js/slick.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+    // Sub-menu toggle
+    $('.open__menu').off('click').on('click', function () {
+      $(this).next().slideToggle('normal');
+    });
+  } else {
+    // Reset styles and behavior for larger screens
+    $('header .open').off('click').removeClass('active');
+    $('.fnav').stop(true, true).css('display', ''); // Reset display without fadeIn or fadeOut
+    $('body').removeClass('open');
+    $("#js_opentxt").html("MENU");
+
+    // Ensure submenus are visible
+    $('.open__menu').off('click').next().css('display', '');
+  }
+}
+
+// Run on page load and window resize
+$(document).ready(handleResponsiveMenu);
+$(window).on('resize', handleResponsiveMenu);
+</script>
 
     <!-- aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -585,13 +620,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/common.js"></script>
+
     <script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.smoothScroll.js"></script>
     <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
     <!-- webfont -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

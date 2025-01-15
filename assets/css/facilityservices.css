@@ -191,8 +191,8 @@
     }
     .containerauto .serviceBox {
         position: relative;
-        max-width: 200px;
-        max-height: 300px;
+        max-width: 190px;
+        max-height: 312px;
         background: #A6585D;
         border-radius: 20px;
         overflow: hidden;
