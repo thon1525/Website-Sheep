@@ -7,6 +7,10 @@ pc
   margin-top: 20px;
 }
 @media only screen and (min-width: 2150px) {
+  .hanle-smooth {
+    padding: 5px;
+    margin-top: 10px;
+  }
   .--revers .room_slide {
     margin-left: auto;
     transform: translateX(11vw) !important;
@@ -17,6 +21,10 @@ pc
   }
 }
 @media only screen and (min-width: 2150px) {
+  .hanle-smooth {
+    padding: 5px;
+    margin-top: 5px;
+  }
   .room_slide {
     width: 84%;
     padding: calc(11% + 168px) 0 0 !important;
