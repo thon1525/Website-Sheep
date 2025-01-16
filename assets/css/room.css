@@ -2,6 +2,10 @@
 /* ======================================================
 pc
 ====================================================== */
+.hanle-smooth {
+  padding: 20px;
+  margin-top: 20px;
+}
 @media only screen and (min-width: 2150px) {
   .--revers .room_slide {
     margin-left: auto;
@@ -108,9 +112,8 @@ pc
 ---------------------------------------------------------------------- */
 .rooms__Wrap {
   position: relative;
-  margin: 0 0 calc(150 / 750 * 100vw) 0;
   padding: 0 0 150px;
-  margin-top: 51px; /* Ensure proper spacing above the element */
+  margin-top: 51px;
 }
   .rooms__bg {
     content: "";
@@ -519,6 +522,10 @@ pc
   }
   /* rooms
 ---------------------------------------------------------------------- */
+.hanle-smooth {
+    padding-top: 169px;
+    margin-top: -169px;
+}
   .rooms__Wrap {
     position: relative;
     margin: 0 0 calc( 150 / 750 * 100vw) 0;
@@ -720,52 +727,38 @@ pc
 /* Default styling for screens larger than 1000px */
 
 
-/* For screens with max-width of 930px */
-@media (max-width: 930px) {
-  .rooms__Wrap {
-    padding-top: 140px !important;
-    margin: 0 0 calc(150 / 750 * 100vw) 0 !important;
-    margin-top: -140px !important;
-  }
-}
-
-/* For screens with max-width of 821px */
 @media (max-width: 821px) {
-  .rooms__Wrap {
+  .hanle-smooth, .rooms__Wrap {
     padding-top: 130px !important;
     margin-top: -130px !important;
   }
 }
 
-/* For screens with max-width of 768px */
 @media (max-width: 768px) {
-  .rooms__Wrap {
+  .hanle-smooth, .rooms__Wrap {
     padding-top: 120px !important;
     margin-top: -120px !important;
   }
 }
 
-/* For screens with max-width of 664px */
 @media (max-width: 664px) {
-  .rooms__Wrap {
+  .hanle-smooth, .rooms__Wrap {
     padding-top: 110px !important;
     margin-top: -110px !important;
-    margin: 0 8px; /* Adjust horizontal margin for better spacing */
+    margin: 0 8px;
   }
 }
 
-/* For screens with max-width of 480px */
 @media (max-width: 480px) {
-  .rooms__Wrap {
+  .hanle-smooth, .rooms__Wrap {
     padding-top: 100px !important;
     margin-top: -100px !important;
     margin: 0 10px;
   }
 }
 
-/* For screens with max-width of 376px */
 @media (max-width: 376px) {
-  .rooms__Wrap {
+  .hanle-smooth, .rooms__Wrap {
     padding-top: 70px !important;
     margin-top: -70px !important;
     margin: 0 5px;
