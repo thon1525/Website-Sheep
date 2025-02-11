@@ -1,179 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        #mainheader {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 20000;
-            background: #ffffff;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        #mainheader .mainheader__inr {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        #mainheader .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        #mainheader .logo img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #spnav {
-            display: none; /* Default hidden for larger screens */
-        }
-
-        .fnav {
-            display: flex;
-        }
-
-        .fnav ul {
-            display: flex;
-            gap: 15px;
-            list-style: none;
-        }
-
-        .fnav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1rem;
-            padding: 10px 15px;
-            transition: color 0.3s;
-        }
-
-        .fnav ul li a:hover {
-            color: #007bff;
-        }
-
-        .btn_rsv {
-            display: none; /* Hidden for larger screens */
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1000px) {
-            #mainheader {
-                height: auto;
-            }
-
-            .fnav {
-                display: none; /* Hide the menu in small screens */
-            }
-
-            #spnav {
-                display: block; /* Show menu toggle button for mobile */
-            }
-
-            #spnav ul {
-                display: flex;
-                justify-content: flex-end;
-                gap: 10px;
-            }
-
-            #spnav ul li {
-                list-style: none;
-            }
-
-            #spnav ul li a {
-                color: #333;
-                text-decoration: none;
-            }
-
-            .fnav__wrap {
-                display: none;
-                flex-direction: column;
-                position: fixed;
-                top: 0;
-                right: 0;
-                background: #ffffff;
-                height: 100%;
-                width: 70%;
-                z-index: 20001;
-                padding: 20px;
-                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-                transform: translateX(100%);
-                transition: transform 0.3s ease-in-out;
-            }
-
-            .fnav__wrap.open {
-                transform: translateX(0);
-            }
-
-            .fnav__wrap ul {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .btn_rsv {
-                display: block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Icons</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+    }
+    .number-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #28a745;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+    }
+  </style>
 </head>
 <body>
-    <header id="mainheader">
-        <div class="mainheader__inr">
-            <h1 class="logo">
-                <a href="index.html"><img src="assets/img/logo.png" alt="LSP Hotel"></a>
-            </h1>
-            <div id="spnav" class="for_sp">
-                <ul>
-                    <li class="btn_rsv"><a href="tel:019-625-2222">
-                        <img src="https://www.hotel-newcarina.co.jp/images/header_icon01.svg" alt="Telephone">
-                        TELEPHONE
-                    </a></li>
-                    <li class="btn_rsv"><a href="https://www.booking.com">
-                        <img src="https://www.hotel-newcarina.co.jp/images/icon_srch.svg" alt="Reservation">
-                        RESERVATION
-                    </a></li>
-                    <li>
-                        <a href="javascript:void(0)" class="open-menu" onclick="toggleMenu()">
-                            MENU
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="fnav">
-                <div class="fnav__wrap" id="menu">
-                    <ul>
-                        <li><a href="index.html">TOP</a></li>
-                        <li><a href="room.html">ROOMS</a></li>
-                        <li><a href="profile_about.html">ABOUT</a></li>
-                        <li><a href="facility&services.html">FACILITY & SERVICE</a></li>
-                        <li><a href="contact_us.html">CONTACT US</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('open');
-        }
-    </script>
+  <div class="number-icon">1</div>
+  <div class="number-icon">2</div>
+  <div class="number-icon">3</div>
 </body>
 </html>

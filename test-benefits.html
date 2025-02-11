@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+</head>
+
+<div id="big-circle" class="circle big">
+    <div class="circle one">
+        <div>1</div>
+    </div>
+    <div class="circle two">
+        <div>2</div>
+    </div>
+    <div class="circle three">
+        <div>
+            2
+        </div>
+    </div>
+    <div class="circle four">
+        <div>2</div>
+    </div>
+    <div class="circle five"></div>
+    <div class="circle six"></div>
+</div>
+
+<style>
+.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+}
+
+.circle.big {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin: 100px;
+}
+
+.one {
+    left: -25px;
+    top: -25px;
+}
+
+.two {
+    top: -60px;
+    left: 50px;
+}
+
+.three {
+    right: -25px;
+    top: -25px;
+}
+
+
+.four {
+    left: -25px;
+    bottom: -25px;
+}
+
+.five {
+    bottom: -60px;
+    left: 50px;
+}
+
+.six {
+    right: -25px;
+    bottom: -25px;
+}
+</style>
+<body>
+</body>
+
+</html>
+
+<script>
+    const ns = {
+  radial: (r) => {
+    //capture radial edges
+    let el = $(r),
+      e = el.children('.radial_edge');
+
+    //avoid div zero
+    if (e.length) {
+      //calc orbital angle and radius
+      let c = el.children('.radial_center'),
+        sa = -360 / e.length, //-360 rotates clockwise, 360 rotates counter
+        i = 0, //0 sets first child at top
+        cw = el.data('center') || c.width() || 100,
+        ew = el.data('edge'),
+        gap = el.data('gap') || .2;
+
+      //calc x,y and reposition each edge
+      e.each(function() {
+        let re = $(this),
+          ewa = ew || re.width() || 50,
+          rad = (cw + ewa) * (1 + gap),
+          x = Math.cos((sa * i) * (Math.PI / 180)) * rad * -1, //-1 flips vertically
+          y = Math.sin((sa * i) * (Math.PI / 180)) * rad * -1;
+        re.css({
+          inset: x + 'px 0 0 ' + y + 'px'
+        });
+        i++;
+      });
+    }
+  }
+}
+
+$(document).ready(() => {
+  //parse each radial group
+  $('.radial').each(function() {
+    ns.radial(this);
+  });
+});
+</script>
