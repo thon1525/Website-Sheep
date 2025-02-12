@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Icons</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-    }
-    .number-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #28a745;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      font-weight: bold;
-      margin: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Tour Expectations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            color: #2b7d2b;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .farm-visitor-card {
+            background-color: #77a800;
+            color: white;
+            border-radius: 50%;
+            padding: 40px;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 1/1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .farm-visitor-card h2 {
+            font-size: 1.2rem;
+            color: #ffde00;
+            margin-bottom: 10px;
+        }
+
+        .farm-visitor-card p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="number-icon">1</div>
-  <div class="number-icon">2</div>
-  <div class="number-icon">3</div>
+
+    <h1>WHAT VISITORS EXPECT ON A FARM TOUR</h1>
+
+    <div class="container">
+        <div class="farm-visitor-card">
+            <h2>Hands-On Experience</h2>
+            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
+        </div>
+        <div class="farm-visitor-card">
+            <h2>Educational Insights</h2>
+            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
+        </div>
+        <div class="farm-visitor-card">
+            <h2>Scenic and Relaxing Environment</h2>
+            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
+        </div>
+    </div>
+
 </body>
 </html>
