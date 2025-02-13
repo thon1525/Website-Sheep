@@ -3,84 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Tour Expectations</title>
+    <title>My Farm</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f8f8f8;
+            box-sizing: border-box;
         }
-
-        h1 {
-            color: #2b7d2b;
-            font-size: 2rem;
-            margin-top: 20px;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            justify-content: center;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .farm-visitor-card {
-            background-color: #77a800;
-            color: white;
-            border-radius: 50%;
-            padding: 40px;
-            text-align: center;
-            width: 100%;
-            max-width: 300px;
-            aspect-ratio: 1/1;
+        body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: auto;
+            height: 100vh;
+            background-color: #610303;
         }
-
-        .farm-visitor-card h2 {
-            font-size: 1.2rem;
-            color: #ffde00;
-            margin-bottom: 10px;
+        .form-services-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
         }
-
-        .farm-visitor-card p {
-            font-size: 1rem;
+        .farm-services-icon, .farm-services-heart {
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
+        .farm-services-icon {
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
+            background: url('../images/icon-cloud.svg') no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  height: 50px;
+        }
+        .farm-services-heart {
+            background: url('../images/icon-cloud.svg') no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  height: 50px;
+        }
+        .caption-form {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
         }
     </style>
 </head>
 <body>
-
-    <h1>WHAT VISITORS EXPECT ON A FARM TOUR</h1>
-
-    <div class="container">
-        <div class="farm-visitor-card">
-            <h2>Hands-On Experience</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
-        <div class="farm-visitor-card">
-            <h2>Educational Insights</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
-        <div class="farm-visitor-card">
-            <h2>Scenic and Relaxing Environment</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
+    <div class="form-services-title">
+        <div class="farm-services-icon"></div>  
+        <h3 class="caption-form">MY FARM</h3>
+        <div class="farm-services-heart"></div>  
     </div>
-
 </body>
 </html>
