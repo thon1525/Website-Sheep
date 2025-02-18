@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/doriel');
 
 
 
 #imageSlider {
     height: 650px;
     position: relative;
-}
 
+}
+#imageSlider.scrolled  {
+    height: 650px;
+    position: relative;
+    margin-top: 100px;
+}
 .carousel-item img {
     height: 650px;
     object-fit: cover;
@@ -198,7 +204,7 @@ a {
 .wave-testimonial {
     z-index: 99;
     position: relative;
-    background: url(../images/wave-testimonial.png) no-repeat center center;
+    background: url(../images/bg-testimonial.svg) no-repeat center center;
     background-size: cover; 
     width: 100%;
     height: auto; 
@@ -433,7 +439,7 @@ a {
 
 /* benefits */
 .wave-benefits{
-    background: url(../images/wave-benefits.png) no-repeat;
+    background: url(../images/benefits-banner-farm.svg) no-repeat;
     background-size: cover;
 }
 
@@ -586,6 +592,10 @@ a {
 }
 
 @media (max-width:767px) {
+    .hotline, .email {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
     .sheep-content {
         background-color: #fff8d9;
         padding: 54px 24px;

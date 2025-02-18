@@ -1,394 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header Design</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
     <header class="top-header">
-        <div class="main-header">
-            <div class="header-top">
-                <p class="welcome-message">
-                    "Welcome to the world of sheep – where farming meets sustainability!"
-                </p>
-                <div class="contact-info">
-                    <span class="hotline">Hotline: 012 000 000 / 011 000 000</span>
-                    <span class="email">Email: kla@gmail.com</span>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>                
-                </div>
+      <div class="main-header">
+        <div class="header-top">
+          <p class="welcome-message">
+            "Welcome to the world of sheep – where farming meets
+            sustainability!"
+          </p>
+          <div class="contact-info">
+            <span class="hotline">Hotline: 012 000 000 / 011 000 000</span>
+            <span class="email">Email: kla@gmail.com</span>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
+          </div>
         </div>
-        <nav class="navbar">
-            <img src="assets/images/logo.png" alt="Logo" class="logo">
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="menu">
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./farm.html">Farm</a></li>
-                <li><a href="./restaurant.html">Restaurant</a></li>
-                <li><a href="./ebook&audiobooks.html">Ebook & Audiobooks</a></li>
-                <li><a href="./online-workshop.html">Online Workshop</a></li>
-                <li><a href="./blog&new.html">Blog & News</a></li>
-            </ul>
-        </nav>        
-        
+      </div>
+      <nav class="navbar">
+        <a href="./index.html">
+          <img src="assets/images/logo.png" alt="Logo" class="logo"
+        /></a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="menu">
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./farm.html">Farm</a></li>
+          <li><a href="./restaurant.html">Restaurant</a></li>
+          <li><a href="./ebook&audiobooks.html">Ebook & Audiobooks</a></li>
+          <li><a href="./online-workshop.html">Online Workshop</a></li>
+          <li><a href="./blog&new.html">Blog & News</a></li>
+          <li>
+            <div class="social-icons social-icon-block">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <div id="imageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div
+      id="imageSlider"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#imageSlider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="assets/images/banner-sheep.jpg"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
+          <div class="slider-caption">
+            <h1>YOUR TAGLINE HERE</h1>
+            <p>YOUR SUBTAGLINE & SHORT DESCRIPTION HERE</p>
+          </div>
         </div>
-    
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <img src="assets/images/banner-sheep.jpg" class="d-block w-100" alt="Slide 1">
-                <div class="slider-caption">
-                    <h1>YOUR TAGLINE HERE</h1>
-                    <p>YOUR SUBTAGLINE & SHORT
-                        DESCRIPTION HERE</p>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img src="assets/images/banner-sheep01.jfif" class="d-block w-100" alt="Slide 2">
-                <div class="slider-caption">
-                    <h1>ANOTHER TAGLINE</h1>
-                    <p>Another Subtagline & Description Here</p>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-                <img src="assets/images/banner-sheep02.jpg" class="d-block w-100" alt="Slide 3">
-                <div class="slider-caption">
-                    <h1>FINAL TAGLINE</h1>
-                    <p>Final Subtagline & Description Here</p>
-                </div>
-            </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="assets/images/banner-sheep01.jfif"
+            class="d-block w-100"
+            alt="Slide 2"
+          />
+          <div class="slider-caption">
+            <h1>ANOTHER TAGLINE</h1>
+            <p>Another Subtagline & Description Here</p>
+          </div>
         </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="assets/images/banner-sheep02.jpg"
+            class="d-block w-100"
+            alt="Slide 3"
+          />
+          <div class="slider-caption">
+            <h1>FINAL TAGLINE</h1>
+            <p>Final Subtagline & Description Here</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section class="body-backgroup">
-        <div class="sheep-main">
-            <div class="content">
-                <div class="image-sheep">
-                    <img src="assets/images/sheep_farm.jpg" alt="Sheep">
-                </div>
-                <div>
-                    <div class="sheep-content">
-                        <div class="teeth-top"></div>
-                        <div class="text-container">
-                            <h2>Sheep Farm</h2>
-                            <p>The Farm Sheep project is dedicated to sustainable and efficient sheep farming, focusing on high-quality wool, meat, and dairy production. By integrating modern farming techniques with traditional practices, the initiative aims to promote eco-friendly, humane, and profitable sheep farming.</p>
-                        </div>
-                        <div class="teeth-bottom"></div>
-                    </div>
-                    <div class="btntop-sheep">
-                        <div class="btn-space">
-                            <a href="#" class="btn-flex">
-                                <button class="btn">
-                                    <span class="btn-text">Read More</span>
-                                    <i class="fa-solid fa-angle-right icon-more"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="sheep-main">
+        <div class="content">
+          <div class="image-sheep">
+            <img src="assets/images/sheep_farm.jpg" alt="Sheep" />
+          </div>
+          <div>
+            <div class="sheep-content">
+              <div class="teeth-top"></div>
+              <div class="text-container">
+                <h2>Sheep Farm</h2>
+                <p>
+                  The Farm Sheep project is dedicated to sustainable and
+                  efficient sheep farming, focusing on high-quality wool, meat,
+                  and dairy production. By integrating modern farming techniques
+                  with traditional practices, the initiative aims to promote
+                  eco-friendly, humane, and profitable sheep farming.
+                </p>
+              </div>
+              <div class="teeth-bottom"></div>
             </div>
-        </div>
-        
-
-
-        <div class="wave-benefits">
-            <div class="benefits-section">
-                <div class="benefits-main">
-                    <div class="benefits-title">Benefits of Raising Sheep</div>
-                    <div class="benefits">
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>1</h3>
-                            </div>
-                            <p><strong>Meat Production</strong>
-                                <span>Provides high-quality lamb or mutton for consumption or sale.</span></p>
-                        </div>
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>2</h3>
-                            </div>
-                            <p><strong>Milk Production</strong>
-                                <span>Sheep's milk is used for cheese and dairy products.</span></p>
-                        </div>
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>3</h3>
-                            </div>
-                            <p><strong>Wool Production</strong>
-                                <span>Source of wool for textiles and clothing.</span></p>
-                        </div>
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>4</h3>
-                            </div>
-                            <p><strong>Low Maintenance</strong>
-                                <span>Requires less care compared to other livestock.</span></p>
-                        </div>
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>5</h3>
-                            </div>
-                            <p><strong>Land Management</strong>
-                                <span>Controls weeds and improves pasture quality through grazing.</span></p>
-                        </div>
-                        <div class="benefits-item">
-                            <div class="benefits-number">
-                                <h3>6</h3>
-                            </div>
-                            <p><strong>Manure</strong>
-                                <span>Natural fertilizer for farming.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="blog-section">
-            <div class="blog-title">BLOG & NEW</div>
-            <div class="blog-cards">
-                <div class="new blog">
-                    <img src="assets/images/blog.jfif" alt="Sheep">
-                    <div class="card-content">
-                        <div class="card-content-flex">
-                            <div class="card-date">17-01-2025</div>
-                            <div class="card-badge blog">blog</div>
-                        </div>
-                        <h2 class="card-title">We have a lesson plan to suit your needs</h2>
-                    </div>
-                </div>
-
-                <div class="new blog">
-                    <img src="assets/images/blog01.jfif" alt="Sheep">
-                    <div class="card-content">
-                        <div class="card-content-flex">
-                            <div class="card-date">17-01-2025</div>
-                            <div class="card-badge event">event</div>
-                        </div>
-                        <h2 class="card-title">We have a lesson plan to suit your needs
-                            plan to suit your needs</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-space">
+            <div class="btntop-sheep">
+              <div class="btn-space">
                 <a href="#" class="btn-flex">
-                    <button class="btn">
-                        <span class="btn-text">See More</span>
-                        <i class="fa-solid fa-angle-right icon-more"></i>
-                    </button>
+                  <button class="btn">
+                    <span class="btn-text">Read More</span>
+                    <i class="fa-solid fa-angle-right icon-more"></i>
+                  </button>
                 </a>
-            </div>    
-        </div>
-
-
-        <div class="wave-testimonial">
-            <div class="testimonial-section">
-                <div class="section-title">TESTIMONIALS<span class="section-border"></span></div>
-                <div class="carousel-container">
-                <button class="arrow left-arrow"><i class="fa-solid fa-angle-left icon-more"></i></button>
-                <div class="carousel">
-                    <div class="testimonials">
-                    <div class="testimonial">
-                        <p class="testimonial-text">“The sheep are healthy, well-cared for, and produce the finest wool and meat. This farm truly sets the standard for excellence!”</p>
-                        <div class="person">
-                        <img src="assets/images/John_sadana.jfif" alt="John Sadana" class="person-image">
-                        <div class="person-text">
-                            <p class="person-name">John Sadana</p>
-                            <p class="person-role">Sales</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">"The team’s dedication to sustainable farming practices is inspiring. The sheep are raised with care, and it shows in the quality of their products."</p>
-                        <div class="person">
-                        <img src="assets/images/Carole_king.jpg" alt="Jane Doe" class="person-image">
-                        <div class="person-text">
-                            <p class="person-name">Jane Doe</p>
-                            <p class="person-role">Sales</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">“This is a great farm for producing sustainable, high-quality wool. Their team is inspiring!”</p>
-                        <div class="person">
-                        <img src="assets/images/John_sadana.jfif" alt="John Sadana" class="person-image">
-                        <div class="person-text">
-                            <p class="person-name">John Sadana</p>
-                            <p class="person-role">Sales</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">"Exceptional service and incredible dedication to quality. Their commitment to sustainability is amazing!"</p>
-                        <div class="person">
-                        <img src="assets/images/youg_kook.jpg" alt="Jane Doe" class="person-image">
-                        <div class="person-text">
-                            <p class="person-name">Jane Doe</p>
-                            <p class="person-role">Sales</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">“This is a great farm for producing sustainable, high-quality wool. Their team is inspiring!”</p>
-                        <div class="person">
-                        <img src="assets/images/John_sadana.jfif" alt="John Sadana" class="person-image">
-                        <div class="person-text">
-                            <p class="person-name">John Sadana</p>
-                            <p class="person-role">Sales</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <button class="arrow right-arrow"><i class="fa-solid fa-angle-right icon-more"></i></button>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <div class="video">
-            <div class="video-title">VIDEO</div>
-            <div class="video-height">
-                <div>
-                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/Rv5w_qnnexg?si=zvMcX1O5OehY50BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="wave-benefits">
+        <div class="benefits-section">
+          <div class="benefits-main">
+            <div class="benefits-title">Benefits of Raising Sheep</div>
+            <div class="benefits">
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>1</h3>
                 </div>
-            </div>
-
-            <div class="btn-space">
-                <a href="#" class="btn-flex">
-                    <button class="btn">
-                        <span class="btn-text">See More</span>
-                        <i class="fa-solid fa-angle-right icon-more"></i>
-                    </button>
-                </a>
-            </div>    
-        </div>
-
-
-        <div class="wave-gallery">
-            <div class="gallery">
-                <div class="gallery-title">GALLERY</div>
-                <div class="gallery-grid">
-                    <img src="assets/images/gallery01.jpg" alt="Sheep 1">
-                    <img src="assets/images/gallery02.jpg" alt="Sheep 2">
-                    <img src="assets/images/gallery03.jpg" alt="Sheep 3">
-                    <img src="assets/images/gallery04.jpg" alt="Sheep 4">
-                    <img src="assets/images/gallery05.jpg" alt="Sheep 5">
-                    <img src="assets/images/gallery06.jfif" alt="Sheep 6">
+                <p>
+                  <strong>Meat Production</strong>
+                  <span
+                    >Provides high-quality lamb or mutton for consumption or
+                    sale.</span
+                  >
+                </p>
+              </div>
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>2</h3>
                 </div>
+                <p>
+                  <strong>Milk Production</strong>
+                  <span
+                    >Sheep's milk is used for cheese and dairy products.</span
+                  >
+                </p>
+              </div>
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>3</h3>
+                </div>
+                <p>
+                  <strong>Wool Production</strong>
+                  <span>Source of wool for textiles and clothing.</span>
+                </p>
+              </div>
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>4</h3>
+                </div>
+                <p>
+                  <strong>Low Maintenance</strong>
+                  <span>Requires less care compared to other livestock.</span>
+                </p>
+              </div>
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>5</h3>
+                </div>
+                <p>
+                  <strong>Land Management</strong>
+                  <span
+                    >Controls weeds and improves pasture quality through
+                    grazing.</span
+                  >
+                </p>
+              </div>
+              <div class="benefits-item">
+                <div class="benefits-number">
+                  <h3>6</h3>
+                </div>
+                <p>
+                  <strong>Manure</strong>
+                  <span>Natural fertilizer for farming.</span>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>   
+      </div>
+
+      <div class="blog-section">
+        <div class="blog-title">BLOG & NEW</div>
+        <div class="blog-cards">
+          <div class="new blog">
+            <img src="assets/images/blog.jfif" alt="Sheep" />
+            <div class="card-content">
+              <div class="card-content-flex">
+                <div class="card-date">17-01-2025</div>
+                <div class="card-badge blog">blog</div>
+              </div>
+              <h2 class="card-title">
+                We have a lesson plan to suit your needs
+              </h2>
+            </div>
+          </div>
+
+          <div class="new blog">
+            <img src="assets/images/blog01.jfif" alt="Sheep" />
+            <div class="card-content">
+              <div class="card-content-flex">
+                <div class="card-date">17-01-2025</div>
+                <div class="card-badge event">event</div>
+              </div>
+              <h2 class="card-title">
+                We have a lesson plan to suit your needs plan to suit your needs
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="btn-space">
+          <a href="#" class="btn-flex">
+            <button class="btn">
+              <span class="btn-text">See More</span>
+              <i class="fa-solid fa-angle-right icon-more"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="wave-testimonial">
+        <div class="testimonial-section">
+          <div class="section-title">
+            TESTIMONIALS<span class="section-border"></span>
+          </div>
+          <div class="carousel-container">
+            <button class="arrow left-arrow">
+              <i class="fa-solid fa-angle-left icon-more"></i>
+            </button>
+            <div class="carousel">
+              <div class="testimonials">
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    “The sheep are healthy, well-cared for, and produce the
+                    finest wool and meat. This farm truly sets the standard for
+                    excellence!”
+                  </p>
+                  <div class="person">
+                    <img
+                      src="assets/images/John_sadana.jfif"
+                      alt="John Sadana"
+                      class="person-image"
+                    />
+                    <div class="person-text">
+                      <p class="person-name">John Sadana</p>
+                      <p class="person-role">Sales</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    "The team’s dedication to sustainable farming practices is
+                    inspiring. The sheep are raised with care, and it shows in
+                    the quality of their products."
+                  </p>
+                  <div class="person">
+                    <img
+                      src="assets/images/Carole_king.jpg"
+                      alt="Jane Doe"
+                      class="person-image"
+                    />
+                    <div class="person-text">
+                      <p class="person-name">Jane Doe</p>
+                      <p class="person-role">Sales</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    “This is a great farm for producing sustainable,
+                    high-quality wool. Their team is inspiring!”
+                  </p>
+                  <div class="person">
+                    <img
+                      src="assets/images/John_sadana.jfif"
+                      alt="John Sadana"
+                      class="person-image"
+                    />
+                    <div class="person-text">
+                      <p class="person-name">John Sadana</p>
+                      <p class="person-role">Sales</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    "Exceptional service and incredible dedication to quality.
+                    Their commitment to sustainability is amazing!"
+                  </p>
+                  <div class="person">
+                    <img
+                      src="assets/images/youg_kook.jpg"
+                      alt="Jane Doe"
+                      class="person-image"
+                    />
+                    <div class="person-text">
+                      <p class="person-name">Jane Doe</p>
+                      <p class="person-role">Sales</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <p class="testimonial-text">
+                    “This is a great farm for producing sustainable,
+                    high-quality wool. Their team is inspiring!”
+                  </p>
+                  <div class="person">
+                    <img
+                      src="assets/images/John_sadana.jfif"
+                      alt="John Sadana"
+                      class="person-image"
+                    />
+                    <div class="person-text">
+                      <p class="person-name">John Sadana</p>
+                      <p class="person-role">Sales</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="arrow right-arrow">
+              <i class="fa-solid fa-angle-right icon-more"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video-title">VIDEO</div>
+        <div class="video-height">
+          <div>
+            <iframe
+              width="100%"
+              height="600"
+              src="https://www.youtube.com/embed/Rv5w_qnnexg?si=zvMcX1O5OehY50BA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="btn-space">
+          <a href="#" class="btn-flex">
+            <button class="btn">
+              <span class="btn-text">See More</span>
+              <i class="fa-solid fa-angle-right icon-more"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="wave-gallery">
+        <div class="gallery">
+          <div class="gallery-title">GALLERY</div>
+          <div class="gallery-grid">
+            <img src="assets/images/gallery01.jpg" alt="Sheep 1" />
+            <img src="assets/images/gallery02.jpg" alt="Sheep 2" />
+            <img src="assets/images/gallery03.jpg" alt="Sheep 3" />
+            <img src="assets/images/gallery04.jpg" alt="Sheep 4" />
+            <img src="assets/images/gallery05.jpg" alt="Sheep 5" />
+            <img src="assets/images/gallery06.jfif" alt="Sheep 6" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <h3>KLA KHMER LAMB ACADEMY</h3>
-                <p>
-                    <strong><i class="fa-solid fa-phone"></i> Tel:</strong> +855-12 680 105 / +855-86 238 668<br>
-                    <strong><i class="fa-solid fa-envelope"></i> Email:</strong> sokhontan229@gmail.com<br>
-                    <strong><i class="fa-solid fa-location-dot"></i> Address:</strong> Phnom Penh
-                </p>
-            </div>
-            <div class="footer-center">
-                <img src="assets/images/logo.png" alt="KLA Logo" class="footer-logo">
-            </div>
-            <div class="footer-right">
-                <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>KLA KHMER LAMB ACADEMY</h3>
+          <p>
+            <strong><i class="fa-solid fa-phone"></i> Tel:</strong> +855-12 680
+            105 / +855-86 238 668<br />
+            <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+            sokhontan229@gmail.com<br />
+            <strong><i class="fa-solid fa-location-dot"></i> Address:</strong>
+            Phnom Penh
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright 2025 | Designed by LSky Cambo</p>
+        <div class="footer-center">
+          <img
+            src="assets/images/logo.png"
+            alt="KLA Logo"
+            class="footer-logo"
+          />
         </div>
+        <div class="footer-right">
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright 2025 | Designed by LSky Cambo</p>
+      </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.menu').classList.toggle('active');
-            document.querySelector('.menu-toggle').classList.toggle('active');
-        });
+      document.querySelector(".menu-toggle").addEventListener("click", () => {
+        document.querySelector(".menu").classList.toggle("active");
+        document.querySelector(".menu-toggle").classList.toggle("active");
+      });
     </script>
-
     <script>
-        const testimonialsContainer = document.querySelector('.testimonials');
-        const leftArrow = document.querySelector('.left-arrow');
-        const rightArrow = document.querySelector('.right-arrow');
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $(".main-header").css("display", "none");
+            $(".top-header").addClass("scrolled");
+            $("#imageSlider").addClass("scrolled");
+          } else {
+            $(".main-header").css("display", "block");
+            $(".top-header").removeClass("scrolled");
+            $("#imageSlider").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+    <script>
+      const testimonialsContainer = document.querySelector(".testimonials");
+      const leftArrow = document.querySelector(".left-arrow");
+      const rightArrow = document.querySelector(".right-arrow");
 
-        let currentIndex = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        const totalTestimonials = testimonials.length;
+      let currentIndex = 0;
+      const testimonials = document.querySelectorAll(".testimonial");
+      const totalTestimonials = testimonials.length;
 
-        function getTestimonialsPerView() {
+      function getTestimonialsPerView() {
         return window.innerWidth <= 768 ? 1 : 2;
-        }
+      }
 
-        function updateCarousel() {
+      function updateCarousel() {
         const testimonialsPerView = getTestimonialsPerView();
         const translateValue = -(currentIndex * (100 / testimonialsPerView));
         testimonialsContainer.style.transform = `translateX(${translateValue}%)`;
-        }
+      }
 
-        // Right Arrow Click
-        rightArrow.addEventListener('click', () => {
+      // Right Arrow Click
+      rightArrow.addEventListener("click", () => {
         const testimonialsPerView = getTestimonialsPerView();
         if (currentIndex < totalTestimonials - testimonialsPerView) {
-            currentIndex++;
+          currentIndex++;
         } else {
-            currentIndex = 0; // Loop to the first slide
+          currentIndex = 0; // Loop to the first slide
         }
         updateCarousel();
-        });
+      });
 
-        // Left Arrow Click
-        leftArrow.addEventListener('click', () => {
+      // Left Arrow Click
+      leftArrow.addEventListener("click", () => {
         const testimonialsPerView = getTestimonialsPerView();
         if (currentIndex > 0) {
-            currentIndex--;
+          currentIndex--;
         } else {
-            currentIndex = totalTestimonials - testimonialsPerView; // Loop to the last slide
+          currentIndex = totalTestimonials - testimonialsPerView; // Loop to the last slide
         }
         updateCarousel();
-        });
+      });
 
-        // Update on Resize
-        window.addEventListener('resize', updateCarousel);
-
-
+      // Update on Resize
+      window.addEventListener("resize", updateCarousel);
     </script>
-</body>
+  </body>
 </html>

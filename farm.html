@@ -54,18 +54,27 @@
         </div>
       </div>
       <nav class="navbar">
-        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        <a href="./index.html">
+          <img src="assets/images/logo.png" alt="Logo" class="logo"
+        /></a>
         <button class="menu-toggle" aria-label="Toggle menu">
           <span class="hamburger"></span>
         </button>
         <ul class="menu">
-          <li><a href="./index.html" >Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./farm.html" class="active">Farm</a></li>
           <li><a href="./restaurant.html">Restaurant</a></li>
           <li><a href="./ebook&audiobooks.html">Ebook & Audiobooks</a></li>
           <li><a href="./online-workshop.html">Online Workshop</a></li>
           <li><a href="./blog&new.html">Blog & News</a></li>
-
+          <li>
+            <div class="social-icons social-icon-block">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -142,13 +151,11 @@
 
     <section class="body-backgroup">
       <div class="my-farm-container">
-        <div class="form-servies-title" >
-           <div class="farm-servies-icon">
-           </div>  
-            <h3 class="caption-form">MY FARM </h3>
-            <div class="farm-servies-heart">
-            </div>  
-          </div>
+        <div class="form-servies-title">
+          <div class="farm-servies-icon"></div>
+          <h3 class="caption-form">MY FARM</h3>
+          <div class="farm-servies-heart"></div>
+        </div>
         <div class="my-farm-description">
           <p class="farm-content-detail">
             A farm is A farm is a piece of land used to grow crops and raise
@@ -158,23 +165,24 @@
             different types of buildings and machinery.
           </p>
         </div>
-        ​​​<div class="farm-handle-map">
-        <div class="my-farm-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500467.1093629948!2d104.24385308906253!3d11.487189400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095b294b3be935%3A0xcb18d0f339023856!2sFish%20Garden%20Cambodia%20Farm!5e0!3m2!1sen!2skh!4v1738223819682!5m2!1sen!2skh"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <!-- <div class="icon-svg-map">
+        ​​​
+        <div class="farm-handle-map">
+          <div class="my-farm-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500467.1093629948!2d104.24385308906253!3d11.487189400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095b294b3be935%3A0xcb18d0f339023856!2sFish%20Garden%20Cambodia%20Farm!5e0!3m2!1sen!2skh!4v1738223819682!5m2!1sen!2skh"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- <div class="icon-svg-map">
           <div class="icon-sheep"></div>
           <div class="icon-heart-map"></div>
         </div> -->
-      </div>
+        </div>
       </div>
       <div class="container-farm-card">
         <div class="my-farm-container">
@@ -349,11 +357,31 @@
       </div>
       <div class="container-background-tour">
         <div class="my-farm-container">
-          <div class="container-farm-tour">  
+          <div class="container-farm-tour">
             <div class="form-servies-title">
-              <h3 class=" handle-farm-tour">FARM TOUR </h3>
+              <h3 class="handle-farm-tour">FARM TOUR</h3>
             </div>
             <div class="farm-container-center">
+              <!-- Modal -->
+              <div class="container-model" id="modal">
+                <div class="modal-content">
+                  <!-- Close Button -->
+                  <i id="close-modal" class="fa-solid fa-xmark close-btn"></i>
+
+                  <h2 class="title-model"></h2>
+
+                  <div class="content-section"></div>
+
+                  <div class="image-gallery">
+                    <img
+                      class="modal-image"
+                      src=""
+                      alt="Farm Image"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
               <div class="farm-tour">
                 <div class="farm-card">
                   <div class="farm-card-content">
@@ -361,21 +389,26 @@
                       <div class="card-content-farm">
                         <h3 class="handle-content">OBSERVING SHEEP</h3>
                         <p>
-                          <strong>Customized Tips:</strong> Get advice on starting
-                          a sheep farm.
+                          <strong>Customized Tips:</strong> Get advice on
+                          starting a sheep farm.
                         </p>
                         <p>
-                          <strong>Resources:</strong> Access guides, handouts, and
-                          learning materials.
+                          <strong>Resources:</strong> Access guides, handouts,
+                          and learning materials.
                         </p>
                         <p>
-                          <strong>Community Building:</strong> Connect with other
-                          farmers.
+                          <strong>Community Building:</strong> Connect with
+                          other farmers.
                         </p>
+                        <div class="handle-button-more">
+                          <button id="button-more" class="show-more-button">
+                            Show More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="image-farm-tour">
                     <img
                       class="fix-image-resposive"
@@ -407,10 +440,15 @@
                           >Understand the essentials of pasture rotation and
                           balanced diets.
                         </p>
+                        <div class="handle-button-more">
+                          <button id="button-more" class="show-more-button">
+                            Show More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="image-farm-tour">
                     <img
                       class="fix-image-resposive"
@@ -430,21 +468,28 @@
                           graded.
                         </p>
                         <p>
-                          <strong>Lambing Assistance:</strong> Gain insights into
-                          birthing processes and how to care for newborn lambs..
+                          <strong>Lambing Assistance:</strong> Gain insights
+                          into birthing processes and how to care for newborn
+                          lambs..
                         </p>
                         <p>
                           <strong>Hoof Trimming and Health Checks:</strong> Get
                           hands-on experience performing routine health tasks.
                         </p>
                         <p>
-                          <strong>Milking:</strong> For dairy breeds, try milking
-                          sheep and processing milk into cheese or yogurt.
+                          <strong>Milking:</strong> For dairy breeds, try
+                          milking sheep and processing milk into cheese or
+                          yogurt.
                         </p>
+                        <div class="handle-button-more">
+                          <button id="button-more" class="show-more-button">
+                            Show More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="image-farm-tour">
                     <img
                       class="fix-image-resposive"
@@ -464,17 +509,23 @@
                           journey.
                         </p>
                         <p>
-                          <strong>Resources:</strong> Access guides, handouts, or
-                          follow-up materials from experienced instructors.
+                          <strong>Resources:</strong> Access guides, handouts,
+                          or follow-up materials from experienced instructors.
                         </p>
                         <p>
-                          <strong>Community Building: </strong> Network with other
-                          participants and build connections with local farmers.
+                          <strong>Community Building: </strong> Network with
+                          other participants and build connections with local
+                          farmers.
                         </p>
+                        <div class="handle-button-more">
+                          <button id="button-more" class="show-more-button">
+                            Show More
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-  
+
                   <div class="image-farm-tour">
                     <img
                       class="fix-image-resposive"
@@ -495,16 +546,28 @@
         <div class="farm-visitor">
           <div class="farm-visitor-card">
             <h2>Hands-On Experience</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
-        <div class="farm-visitor-card">
+            <p>
+              Visitors expect to interact with farm animals, pick fresh produce,
+              or participate in farm activities like milking cows or feeding
+              animals.
+            </p>
+          </div>
+          <div class="farm-visitor-card">
             <h2>Educational Insights</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
-        <div class="farm-visitor-card">
+            <p>
+              Visitors expect to interact with farm animals, pick fresh produce,
+              or participate in farm activities like milking cows or feeding
+              animals.
+            </p>
+          </div>
+          <div class="farm-visitor-card">
             <h2>Scenic and Relaxing Environment</h2>
-            <p>Visitors expect to interact with farm animals, pick fresh produce, or participate in farm activities like milking cows or feeding animals.</p>
-        </div>
+            <p>
+              Visitors expect to interact with farm animals, pick fresh produce,
+              or participate in farm activities like milking cows or feeding
+              animals.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -545,14 +608,74 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script>
       document.querySelector(".menu-toggle").addEventListener("click", () => {
         document.querySelector(".menu").classList.toggle("active");
         document.querySelector(".menu-toggle").classList.toggle("active");
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $(".main-header").css("display", "none");
+            $(".top-header").addClass("scrolled");
+            
+          } else {
+            $(".main-header").css("display", "block");
+            $(".top-header").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+    <script>
+      $(".card-content-farm").each(function () {
+        let $this = $(this);
+        let $paragraphs = $this.find("p:has(strong)");
+        let $handle_content = $this.find(".handle-content");
+        let $strongText = $(this).find("strong").text();
+        let $showMoreBtn = $this.find(".show-more-button");
+        let $image = $this.closest(".farm-card").find(".image-farm-tour img");
+        let modal = $("#modal");
+        let menu = $(".menu-toggle");
+        let navMenu = $(".mobile-menu");
+        $paragraphs.slice(3).hide();
+        $showMoreBtn.click(function () {
+          modal.attr("style", "display: flex !important;").fadeIn();
+          $(".title-model").text($handle_content.text());
+          $(".content-section").html($paragraphs.clone().show());
+          $(".modal-image").attr("src", $image.attr("src")).show();
 
+          if (navMenu.hasClass("active")) {
+            navMenu.removeClass("active").hide();
+            menu.removeClass("active");
+          }
+
+          // modal.show();
+          modal.fadeIn();
+        });
+        // Close modal
+        $("#close-modal").click(function () {
+          $(".title-model").text("");
+          $(".content-section").empty();
+          $(".modal-image").hide();
+          modal.hide();
+        });
+        if ($paragraphs.length >= 4) {
+          $showMoreBtn.show();
+        }
+        // if ($paragraphs.length <= 3) {
+        //         $showMoreBtn.hide();
+        //     }
+        // if($dataragraphs.length >=  581){
+        //       $showMoreBtn.show();
+        //     }
+        //     if($dataragraphs.length <=  580){
+        //       $showMoreBtn.hide();
+        //     }
+      });
+    </script>
     <script>
       const testimonialsContainer = document.querySelector(".testimonials");
       const leftArrow = document.querySelector(".left-arrow");

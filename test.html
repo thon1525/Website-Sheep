@@ -3,63 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Farm</title>
+    <title>Responsive Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
+        /* Modal Container */
+        .container-model {
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #610303;
+            padding: 16px;
+            overflow-y: auto;
         }
-        .form-services-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            text-align: center;
-        }
-        .farm-services-icon, .farm-services-heart {
-            width: 50px;
-            height: 50px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .farm-services-icon {
 
-            background: url('../images/icon-cloud.svg') no-repeat center center;
-  background-size: contain;
-  width: 50px;
-  position: relative;
-  margin: 0px 0px 0px 0px;
-  height: 50px;
+        /* Modal Content */
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
         }
-        .farm-services-heart {
-            background: url('../images/icon-cloud.svg') no-repeat center center;
-  background-size: contain;
-  width: 50px;
-  position: relative;
-  margin: 0px 0px 0px 0px;
-  height: 50px;
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            color: #000;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
         }
-        .caption-form {
-            font-size: 24px;
-            font-weight: bold;
-            color: green;
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .modal-content {
+                width: 80%;
+                max-width: 500px;
+            }
         }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 85%;
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .modal-content {
+                width: 95%;
+                max-width: 350px;
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .modal-content {
+                width: 98%;
+                max-width: 300px;
+                padding: 14px;
+            }
+        }
+
+        /* Sample Card Styles */
+        .farm-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .show-more-button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .show-more-button:hover {
+            background: #0056b3;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="form-services-title">
-        <div class="farm-services-icon"></div>  
-        <h3 class="caption-form">MY FARM</h3>
-        <div class="farm-services-heart"></div>  
+
+    <!-- Sample Card -->
+    <div class="farm-card">
+        <div class="card-content-farm">
+            <h3>Farm Title</h3>
+            <p><strong>Farm Information</strong></p>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4 (Hidden initially)</p>
+            <button class="show-more-button">Show More</button>
+        </div>
+        <div class="image-farm-tour">
+            <img src="https://via.placeholder.com/300" alt="Farm Image">
+        </div>
     </div>
+
+    <!-- Modal -->
+    <div class="container-model" id="modal">
+        <div class="modal-content">
+            <i id="close-modal" class="fa-solid fa-xmark close-btn"></i>
+            <h2 class="title-model"></h2>
+            <div class="content-section"></div>
+            <div class="image-gallery">
+                <img class="modal-image" src="" alt="Farm Image" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            let modal = $("#modal");
+            let titleModel = $(".title-model");
+            let contentSection = $(".content-section");
+            let modalImage = $(".modal-image");
+
+            // Open Modal
+            $(document).on("click", ".show-more-button", function () {
+                let $card = $(this).closest(".card-content-farm");
+                let strongText = $card.find("strong").text();
+                let paragraphs = $card.find("p:has(strong)").clone().show();
+                let imageSrc = $card.closest(".farm-card").find(".image-farm-tour img").attr("src");
+
+                // Populate Modal
+                titleModel.text(strongText);
+                contentSection.html(paragraphs);
+                if (imageSrc) {
+                    modalImage.attr("src", imageSrc).show();
+                } else {
+                    modalImage.hide();
+                }
+
+                // Show Modal
+                modal.fadeIn().css("display", "flex");
+            });
+
+            // Close Modal
+            $("#close-modal").on("click", function () {
+                titleModel.text("");
+                contentSection.empty();
+                modalImage.hide();
+                modal.fadeOut();
+            });
+
+            // Close Modal When Clicking Outside Content
+            $(document).on("click", function (e) {
+                if ($(e.target).is("#modal")) {
+                    $("#close-modal").trigger("click");
+                }
+            });
+
+            // Hide Extra Paragraphs Initially
+            $(".card-content-farm").each(function () {
+                let $this = $(this);
+                let paragraphs = $this.find("p:has(strong)");
+                let showMoreBtn = $this.find(".show-more-button");
+
+                paragraphs.slice(3).hide();
+                if (paragraphs.length > 3) {
+                    showMoreBtn.show();
+                } else {
+                    showMoreBtn.hide();
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
