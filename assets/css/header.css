@@ -155,6 +155,7 @@ body {
     }
 }
 @media only screen and (max-width: 768px) {
+    
     .contact-info {
         display: none;
     }
@@ -318,7 +319,7 @@ body {
     .responsive-contact {
         display: block;
     }
-    .social-icons {
+    /* .social-icons {
         display: none;
     }
     .social-icon-block {
@@ -333,7 +334,7 @@ body {
         color: #7d4e24;
      
     }
-   
+    */
     /* .contact-info {
         display: none;
     } */

@@ -11,7 +11,7 @@
 #imageSlider.scrolled  {
     height: 650px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 .carousel-item img {
     height: 650px;
@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    border-radius: 25px;
 }
 
 .slider-caption p {
